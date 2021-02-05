@@ -14,19 +14,21 @@ This website serves to provide E-commerce service which brings convenience for c
 - Responsive webpage
 - Create API using contentful
 - retrieve the api data using JS with contentful accesstoken key
-
-### Features Left To Be Implemented
 - View products
 - View cart
 - Add item to cart
 - Clear cart item
 - Calculate total cost in cart
+- Floating Social media panel
+- Smooth scrolling effect on click
+ 
+### Features Left To Be Implemented
 - Calculate points earned in cart
-- Social media panel
 - Earn points when user completes transaction
 - Use points to exchange for exclusive rewards
 - Bootstrap Contact form
 - Use restdb for contact form
+- Lottie Animations
 
 # Validator
 ### Site used for validation
@@ -66,6 +68,9 @@ This website serves to provide E-commerce service which brings convenience for c
 - Create Javascript to retrieve contentful api
 - Create Javascript to display product with the data retrieved from contentful api
 - Create Javascript to add item/ remove item from cart
+- Create Floating social Panel
+- Create Javascript to display social panel on click
+- Create smooth scrolling effect on click
 
 # Acknowledgement
 #### We received inspiration for this project from:
@@ -73,6 +78,7 @@ This website serves to provide E-commerce service which brings convenience for c
 
 #### Some of the guides that helped us build this website:
 - [Contentful](https://www.youtube.com/watch?v=bLKkG0_4Xc4&ab_channel=PragmaticReviews).
+- [Smooth Scrolling Effect](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2).
 
 # Contributors
 #### Ng Jian Wei <S*****269@connect.np.edu.sg>
