@@ -1,10 +1,10 @@
 # Shopification
-I have built a responsive e-commerce website that will display products using api created using contentful.
+We have built a responsive e-commerce website that will display products using api created using contentful.
 
 - [Github Page](https://brianlimmj.github.io/ID_Assignment3/).
 
 # The purpose of this Site.
-This website serves to provide E-commerce service which brings convenience for customers as they do not have to leave home and only need to browse website online, especially for buying the products which are not sold in nearby shops. It could help customers buy wider range of products and save customers' time. Consumers also gain power through online shopping.
+This website serves to provide E-commerce service which brings convenience for customers as they do not have to leave home and only need to browse website online, especially for buying the products which are not sold in nearby shops. It could help customers buy wider range of products and save customers' time. Consumers also gain points through online shopping to exchange for exclusive rewards.
 
 # Design Process
 -tbc-
@@ -63,12 +63,15 @@ This website serves to provide E-commerce service which brings convenience for c
 - Add Banner to index.html
 - Create styles.css
 - Create script.css
+- Create Javascript to retrieve contentful api
+- Create Javascript to display product with the data retrieved from contentful api
+- Create Javascript to add item/ remove item from cart
 
 # Acknowledgement
-#### I received inspiration for this project from:
+#### We received inspiration for this project from:
 - [Lazada](https://www.lazada.sg/#).
 
-#### Some of the guides that helped me build this website:
+#### Some of the guides that helped us build this website:
 - [Contentful](https://www.youtube.com/watch?v=bLKkG0_4Xc4&ab_channel=PragmaticReviews).
 
 # Contributors
