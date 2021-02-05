@@ -50,13 +50,58 @@ html, body {
   }
   /* --------------- End of Navbar ---------------- */
 
-  /* --------------- Footer ----------------------- */
+.motto-image{
+height: 600px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
 
-  footer{
-	position: fixed;
+
+
+
+.content-container{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.content-left{
+    width: 30%;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    background-color: #cceeff;
+}
+
+
+.content-middle{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    background-color: #b3e6ff;
+}
+.content-right{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    background-color: #99ddff;
+}
+
+.content-text{
+    margin: auto;
+    margin-top: 70px;
+    width: 75%;
+}
+    /* --------------- Footer ----------------------- */
+
+    footer{
+    position: fixed;
     bottom: 0;
     margin-top: auto;
-}
+    }
 
 @media (max-height:800px){
 	footer { position: static; }
@@ -122,6 +167,7 @@ html, body {
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
+    
 }
 
 /* Footer Center */
