@@ -12,7 +12,8 @@ This website serves to provide E-commerce service which brings convenience for c
 # Features
 ### Existing Features
 - Responsive webpage
-- Create API using contentful and retrieve the api using contentful accesstoken key
+- Create API using contentful
+- retrieve the api data using JS with contentful accesstoken key
 
 ### Features Left To Be Implemented
 - View products
@@ -22,9 +23,9 @@ This website serves to provide E-commerce service which brings convenience for c
 - Calculate total cost in cart
 - Calculate points earned in cart
 - Social media panel
-- Earn points when user complete transaction
+- Earn points when user completes transaction
 - Use points to exchange for exclusive rewards
-- Contact form
+- Bootstrap Contact form
 - Use restdb for contact form
 
 # Validator
