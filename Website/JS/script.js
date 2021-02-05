@@ -271,3 +271,20 @@ close_btn.addEventListener('click', () => {
     social_panel_container.classList.remove('visible');
 });
 
+// Navigation bar JS
+function openMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+
+window.onclick = function (event) {
+  if (!event.target.matches('.btn-menu')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
