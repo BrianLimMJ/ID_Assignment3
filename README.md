@@ -72,6 +72,9 @@ This website serves to provide E-commerce service which brings convenience for c
 - Create Javascript to display social panel on click
 - Create smooth scrolling effect on click
 
+### 6/2/2021 : 
+- 
+
 # Acknowledgement
 #### We received inspiration for this project from:
 - [Lazada](https://www.lazada.sg/#).
