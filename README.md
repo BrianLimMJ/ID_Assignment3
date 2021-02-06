@@ -79,6 +79,8 @@ This website serves to provide E-commerce service which brings convenience for c
 - create visa.png
 - create house.png
 - create cart.png
+- create worldMap.png
+
 
 # Acknowledgement
 #### We received inspiration for this project from:
