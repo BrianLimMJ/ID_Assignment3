@@ -784,23 +784,25 @@ body {
 }
 
 .content-container {
-	padding-top: 10px;
+	padding-top: 50px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .content-left {
 	width: 30%;
-	height: 500px;
+	height: 550px;
 	margin: auto;
 	text-align: center;
 	background-color: #cceeff;
+	
 }
 
 .content-middle {
 	width: 30%;
+	height: 550px;
 	margin: auto;
 	text-align: center;
 	background-color: #b3e6ff;
@@ -808,15 +810,40 @@ body {
 
 .content-right {
 	width: 30%;
+	height: 550px;
 	margin: auto;
 	text-align: center;
 	background-color: #99ddff;
 }
-
+@keyframes contentMoves{
+	from {top: 250px;}
+	to{top: 0px;}
+}
+.content-header{
+	margin-top: 50px;
+	position: relative;
+	animation: headerMoves 5s;
+}
+@keyframes headerMoves{
+	from{ top:-100px;}
+	to{top: 0px;}
+}
 .content-text {
 	margin: auto;
-	margin-top: 70px;
+	margin-top: 50px;
 	width: 75%;
+	line-height: 1.6;
+	position: relative;
+	animation: contentMoves 5s;
+}
+.motto-images{
+	margin-top: 35px;
+}
+.technology-images{
+	margin-top: 5px;
+}
+.payment-images{
+	margin-top: 65px;
 }
 
 
