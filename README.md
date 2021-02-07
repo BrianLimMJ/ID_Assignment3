@@ -81,7 +81,8 @@ This website serves to provide E-commerce service which brings convenience for c
 - create cart.png
 - create worldMap.png
 
-
+### 7/2/2021 :
+- Create contact.html
 # Acknowledgement
 #### We received inspiration for this project from:
 - [Lazada](https://www.lazada.sg/#).
