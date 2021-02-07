@@ -880,6 +880,16 @@ body {
 /* --------------- End Of About Page Content(about.html) ---------------- */
 
 
+/* --------------- Contact Page Content(contact.html) ---------------- */
+.contact-image {
+	height: 1000px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* --------------- End Of Contact Page Content(contact.html) ---------------- */
+
 /* --------------- Footer ----------------------- */
 
 footer {
