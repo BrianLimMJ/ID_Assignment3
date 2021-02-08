@@ -882,11 +882,61 @@ body {
 
 /* --------------- Contact Page Content(contact.html) ---------------- */
 .contact-image {
-	height: 1000px;
+	height: 800px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
+
+.contact-container{
+	border-radius: 10px;
+	margin: auto;
+	height: 650px;
+	width: 650px;
+	text-align: center;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+}
+.contact-form-image{
+	height: 250px;
+	width: 650px;
+	border-radius: 2%;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.contact-header-one{
+	padding: 70px;
+	line-height: 1.6;
+	color: #ffffff;
+
+}
+.contact-header-two{
+	line-height: 1.6;
+	color: #ffffff;
+}
+.contact-form{
+	margin: 3px;
+}
+.labels{
+	margin: 20px;
+}
+.userInput{
+	padding: 10px;
+	width: 50%;
+	margin: 15px ;
+	border: 0;
+	border-radius: 10px;
+	box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
 
 /* --------------- End Of Contact Page Content(contact.html) ---------------- */
 
