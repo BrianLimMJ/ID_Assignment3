@@ -83,6 +83,12 @@ This website serves to provide E-commerce service which brings convenience for c
 
 ### 7/2/2021 :
 - Create contact.html
+- Add Footer to contact.html
+
+### 8/2/2021 :
+- Add banner to contact.html
+- Add form to contact.html
+
 # Acknowledgement
 #### We received inspiration for this project from:
 - [Lazada](https://www.lazada.sg/#).
