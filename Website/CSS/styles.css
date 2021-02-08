@@ -916,11 +916,24 @@ body {
 	padding: 70px;
 	line-height: 1.6;
 	color: #ffffff;
+	position: relative;
+	animation: header-one-Moves 3s;
+}
 
+@keyframes header-one-Moves{
+	from {left: 250px;}
+	to {left: 0px;}
 }
 .contact-header-two{
 	line-height: 1.6;
 	color: #ffffff;
+	position: relative;
+	animation: header-two-Moves 4s;
+}
+
+@keyframes header-two-Moves{
+	from {left: 250px;}
+	to {left:0px;}
 }
 .contact-form{
 	margin: 3px;
