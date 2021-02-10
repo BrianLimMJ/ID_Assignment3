@@ -21,14 +21,15 @@ This website serves to provide E-commerce service which brings convenience for c
 - Calculate total cost in cart
 - Floating Social media panel
 - Smooth scrolling effect on click
- 
-### Features Left To Be Implemented
-- Calculate points earned in cart
+- Calculate points earned in cart 
 - Earn points when user completes transaction
+
+### Features Left To Be Implemented
 - Use points to exchange for exclusive rewards
-- Bootstrap Contact form
 - Use restdb for contact form
 - Lottie Animations
+- Mini games to earn points
+- Survey to earn points
 
 # Validator
 ### Site used for validation
@@ -74,12 +75,7 @@ This website serves to provide E-commerce service which brings convenience for c
 
 ### 6/2/2021 : 
 - Add css animations to about.html
-- create mastercard.png
-- create paypal.png
-- create visa.png
-- create house.png
-- create cart.png
-- create worldMap.png
+- Add images(mastercard.png,paypal.png,visa.png,house.png,worldMap.png,cart.png)
 
 ### 7/2/2021 :
 - Create contact.html
@@ -88,6 +84,9 @@ This website serves to provide E-commerce service which brings convenience for c
 ### 8/2/2021 :
 - Add banner to contact.html
 - Add form to contact.html
+
+### 10/2/2021 :
+- Added point system to get points after checkout
 
 # Acknowledgement
 #### We received inspiration for this project from:
@@ -99,7 +98,7 @@ This website serves to provide E-commerce service which brings convenience for c
 
 # Contributors
 #### Ng Jian Wei <S*****269@connect.np.edu.sg>
-#### Brian Lim Ming Jian <S10208584@connect.np.edu.sg>
+#### Brian Lim Ming Jian <S*****584@connect.np.edu.sg>
 
 # License & copyright
 #### © Ng Jian Wei, Ngee Ann Poly
