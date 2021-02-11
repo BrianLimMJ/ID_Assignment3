@@ -90,6 +90,7 @@ This website serves to provide E-commerce service which brings convenience for c
 
 ### 11/2/2021 :
 - Remove footer for about.html and contact.html
+- Modify Nav bar to go to contact.html
 
 # Acknowledgement
 #### We received inspiration for this project from:
