@@ -88,6 +88,9 @@ This website serves to provide E-commerce service which brings convenience for c
 ### 10/2/2021 :
 - Added point system to get points after checkout
 
+### 11/2/2021 :
+- Remove footer for about.html and contact.html
+
 # Acknowledgement
 #### We received inspiration for this project from:
 - [Lazada](https://www.lazada.sg/#).
