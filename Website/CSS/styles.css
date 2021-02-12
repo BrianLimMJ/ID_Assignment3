@@ -512,6 +512,13 @@ body {
 	cursor: pointer;
 }
 
+.active{
+	background-color: rgba(230, 194, 126, 0.315);
+	border-color: black;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-style: solid;
+}
 .cart-items {
 	position: absolute;
 	top: -8px;
@@ -538,12 +545,16 @@ body {
 
 /* --------------- Banner(Index.html)---------------- */
 
-.hero {
+.hero,.reward-hero {
 	min-height: calc(100vh - 60px);
 	background: url("../Images/banner-bcg.jpeg") center/cover no-repeat;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.reward-hero {
+	background: url("../Images/rewardBanner.png") center/cover no-repeat;
 }
 
 .banner {
@@ -962,8 +973,6 @@ body {
 
 
 /* --------------- End Of Contact Page Content(contact.html) ---------------- */
-
-
 
 /* --------------- Social Panel ---------------- */
 

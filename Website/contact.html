@@ -6,45 +6,29 @@
       <title>Shopification</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel = 'stylesheet' href="CSS/styles.css">
-      <script>// Navigation bar JS
-         function openMenu() {
-           document.getElementById("menu").classList.toggle("show");
-         }
-         
-         window.onclick = function (event) {
-           if (!event.target.matches('.btn-menu')) {
-             var dropdowns = document.getElementsByClassName("dropdown-content");
-             var i;
-             for (i = 0; i < dropdowns.length; i++) {
-               var openDropdown = dropdowns[i];
-               if (openDropdown.classList.contains('show')) {
-                 openDropdown.classList.remove('show');
-               }
-             }
-           }
-         }</script>
    </head>
    <body>
       <!-- navbar -->
       <nav class="navbar">
          <div class="navbar-center">
-           <div class="dropdown">
-             <button type="button" onclick="openMenu()" class="btn-menu fa fa-bars"></button>
-             <div id="menu" class="dropdown-content">
-               <a href="../index.html">Home</a>
-               <a href="../Website/about.html">About</a>
-               <a href="../Website/contact.html">Contact</a>
-             </div>
-           </div>
-           <a class="navbar-brand" href="../index.html"><img src="Images/logo.png"></a>
-           <div class="cart-btn">
-             <span class="nav-icon">
-               <i class="fa fa-cart-plus"></i>
-             </span>
-             <div class="cart-items">0</div>
-           </div>
+         <div class="dropdown">
+            <button type="button" onclick="openMenu()" class="btn-menu fa fa-bars"></button> menu
+            <div id="menu" class="dropdown-content">
+               <a href="../index.html">Shop Here</a>
+               <a href="redeem.html">Redeem Points</a>
+               <a href="about.html">About Us</a>
+               <a class="active" href="contact.html">Contact Us</a>
+            </div>
          </div>
-       </nav>
+         <a class="navbar-brand" href="#"><img src="Images/logo.png"></a>
+         <div class="cart-btn">
+            <span class="nav-icon">
+               <i class="fa fa-cart-plus"></i>
+            </span>
+            <div class="cart-items">0</div>
+         </div>
+         </div>
+      </nav>
       <!-- end of navbar -->
       <!-- Body Content -->
       <div class = 'contact-image' style="background-image: url('Images/furniture.jpg');">
@@ -89,5 +73,24 @@
          </div>
       </div>
       <!-- End of Body Content -->
+      <!-- cart -->
+      <div class="cart-overlay">
+         <div class="cart">
+         <span class="close-cart"><i class="fa fa-window-close"></i></span>
+         <h2>your cart</h2>
+         <div class="cart-content"></div>
+         <div class="cart-footer">
+            <h3>cart total : $<span class="cart-total">0</span></h3>
+            <h3>points attainable : <span class="cart-point">0</span></h3>
+            <h3>Your accumulated points : <span class="cart-totalpoint">0</span></h3>
+            <button class="checkout-cart banner-btn">checkout</button>
+         </div>
+         </div>
+      </div>
+      <!-- end of cart -->
+      <!-- contentful -->
+      <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+      <!--  javascript -->
+      <script src="JS/script.js"></script>
    </body>
 </html>
