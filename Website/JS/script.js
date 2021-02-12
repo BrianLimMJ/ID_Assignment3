@@ -77,7 +77,13 @@ class UI {
        <!-- end of single product -->
   `;
    });
-   productsDOM.innerHTML = result;
+   try{
+    productsDOM.innerHTML = result;
+   }
+   catch{
+     console.log("This page isn't the product page, product script will not be executed.");
+   }
+   
  }
  getBagButtons() {
    const buttons = [...document.querySelectorAll(".bag-btn")];

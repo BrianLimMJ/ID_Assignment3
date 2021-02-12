@@ -529,17 +529,6 @@ body {
 	color: var(--mainWhite);
 }
 
-.checkout-cart.banner-btn{
-	background-color: #a9d89a;
-	border-color: #a9d89a;
-}
-
-.checkout-cart.banner-btn:hover{
-	background-color: transparent;
-	color:#a9d89a
-}
-
-
 /* --------------- End of Navbar ---------------- */
 
 
