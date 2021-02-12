@@ -57,7 +57,39 @@ This website serves to provide E-commerce service which brings convenience for c
 ### CSS
 - [Normalize.CSS](https://necolas.github.io/normalize.css/).
 
+### Images
+- [banner-bcg.jpeg](https://www.pinterest.com/pin/742601426040720227/).
+- [rewardBanner.png](https://www.freepik.com/free-photo/blur-shopping-mall_1135595.htm).
+- [Couch](https://www.zmartbuild.com/renovate-house-light-wall-framing/).
+- [Queen Panel Bed](https://www.bdcnetwork.com/marriott-hilton-and-ihg-continue-dominate-us-hotel-construction-pipeline-q2%E2%80%9920-close).
+- [Dresser](https://furniture.mu/pexels-photo-271660-1/).
+- [Fridge](https://katiescrochet.xyz/small-kitchen-design-ideas/).
+- [Twin Panel Bed](https://www.bproperty.com/blog/different-types-of-beds/).
+- [Single Panel Bed](https://www.getorganizedcolumbus.com/tips-for-maximizing-small-spaces-in-your-home).
+- [King Panel Bed](https://enlightened-digital.com/the-future-of-smart-home-technology/).
+- [Table](https://www.clevergirlorganizing.com/2016/09/lets-get-prepared-day-20-can-a-minimalist-be-prepared/).
+
 # Development Progress
+
+### 11/2/2021 :
+- Remove footer for about.html and contact.html
+- Modify Nav bar to go to contact.html
+
+### 10/2/2021 :
+- Added point system to get points after checkout
+
+### 8/2/2021 :
+- Add banner to contact.html
+- Add form to contact.html
+
+### 7/2/2021 :
+- Create contact.html
+- Add Footer to contact.html
+
+### 6/2/2021 : 
+- Add css animations to about.html
+- Add images(mastercard.png,paypal.png,visa.png,house.png,worldMap.png,cart.png)
+
 ### 5/2/2021 : 
 - Create logo png
 - Create index.html
@@ -72,25 +104,6 @@ This website serves to provide E-commerce service which brings convenience for c
 - Create Floating social Panel
 - Create Javascript to display social panel on click
 - Create smooth scrolling effect on click
-
-### 6/2/2021 : 
-- Add css animations to about.html
-- Add images(mastercard.png,paypal.png,visa.png,house.png,worldMap.png,cart.png)
-
-### 7/2/2021 :
-- Create contact.html
-- Add Footer to contact.html
-
-### 8/2/2021 :
-- Add banner to contact.html
-- Add form to contact.html
-
-### 10/2/2021 :
-- Added point system to get points after checkout
-
-### 11/2/2021 :
-- Remove footer for about.html and contact.html
-- Modify Nav bar to go to contact.html
 
 # Acknowledgement
 #### We received inspiration for this project from:
@@ -107,4 +120,3 @@ This website serves to provide E-commerce service which brings convenience for c
 # License & copyright
 #### © Ng Jian Wei, Ngee Ann Poly
 #### © Brian Lim Ming Jian, Ngee Ann Poly
-
