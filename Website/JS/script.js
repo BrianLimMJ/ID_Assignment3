@@ -382,10 +382,25 @@ class RewardUI {
 function redeemItem(redeemPoints){
     if(redeemPoints > totalPoints)
     {
-        alert("not enough points");
+        Confirm.open({
+            title: 'Not enough points to redeem this item.',
+            message: 'You do not have enough to redeem this, do you wish to earn some points?',
+            onok: () => {
+                window.location.href = "../Website/quiz.html";
+            }
+          })
     }
     else{
-        alert("enough points");
+        Confirm.open({
+            title: 'Are you sure you want to redeem this?',
+            message: 'You have enough points to redeem this! Are you sure you want to redeem this?',
+            onok: () => {
+                totalPoints -= redeemPoints;
+                userPoints.innerHTML = parseFloat(totalPoints.toFixed(0));
+                Storage.savePoint(totalPoints.toFixed(0));
+                alert("You have spent "+ redeemPoints +" points, your order has been processed.");
+            }
+          })
     }
 }
 
@@ -720,3 +735,72 @@ window.onclick = function(event) {
 }
 //* ---------------------- end of navigation bar panel JS ---------------------- *//
 
+//* ---------------------- Confirmation Box JS ---------------------- *//
+const Confirm = {
+    open (options) {
+        options = Object.assign({}, {
+            title: '',
+            message: '',
+            okText: 'OK',
+            cancelText: 'Cancel',
+            onok: function () {
+            },
+            oncancel: function () {}
+        }, options);
+        
+        const html = `
+            <div class="confirm">
+                <div class="confirm__window">
+                    <div class="confirm__titlebar">
+                        <span class="confirm__title">${options.title}</span>
+                        <button class="confirm__close">&times;</button>
+                    </div>
+                    <div class="confirm__content">${options.message}</div>
+                    <div class="confirm__buttons">
+                        <button class="confirm__button confirm__button--ok confirm__button--fill">${options.okText}</button>
+                        <button class="confirm__button confirm__button--cancel">${options.cancelText}</button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const box = document.createElement('template');
+        box.innerHTML = html;
+
+        // Elements
+        const confirmEl = box.content.querySelector('.confirm');
+        const btnClose = box.content.querySelector('.confirm__close');
+        const btnOk = box.content.querySelector('.confirm__button--ok');
+        const btnCancel = box.content.querySelector('.confirm__button--cancel');
+
+        confirmEl.addEventListener('click', e => {
+            if (e.target === confirmEl) {
+                options.oncancel();
+                this._close(confirmEl);
+            }
+        });
+
+        btnOk.addEventListener('click', () => {
+            options.onok();
+            this._close(confirmEl);
+        });
+
+        [btnCancel, btnClose].forEach(el => {
+            el.addEventListener('click', () => {
+                options.oncancel();
+                this._close(confirmEl);
+            });
+        });
+
+        document.body.appendChild(box.content);
+    },
+
+    _close (confirmEl) {
+        confirmEl.classList.add('confirm--close');
+
+        confirmEl.addEventListener('animationend', () => {
+            document.body.removeChild(confirmEl);
+        });
+    }
+};
+//* ---------------------- end of confirmation box JS ---------------------- *//
