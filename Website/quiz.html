@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Beat the quiz to earn points!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = 'stylesheet' href="CSS/styles.css">
+   </head>
+   <body>
+      <!-- navbar -->
+      <nav class="navbar">
+         <div class="navbar-center">
+            <div class="dropdown">
+               <button type="button" onclick="openMenu()" class="btn-menu fa fa-bars"></button> menu
+               <div id="menu" class="dropdown-content">
+                  <a href="../index.html">Shop Here</a>
+                  <a href="redeem.html">Redeem Points</a>
+                  <a class="active" href="quiz.html">Earn Points</a>
+                  <a href="about.html">About Us</a>
+                  <a href="contact.html">Contact Us</a>
+               </div>
+            </div>
+            <a class="navbar-brand" href="#home"><img src="Images/logo.png"></a>
+            <div class="cart-btn">
+               <span class="nav-icon">
+               <i class="fa fa-cart-plus"></i>
+               </span>
+               <div class="cart-items">0</div>
+            </div>
+         </div>
+      </nav>
+      <!-- end of navbar -->
+      <!-- start of quiz box -->
+      <!-- start quiz button -->
+      <div class="start_btn"><button>Start Quiz</button></div>
+      <!-- info box -->
+      <div class="info_box">
+         <div class="info-title"><span>Some Rules of this Quiz</span></div>
+         <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get reward points on the basis of your correct answers.</div>
+         </div>
+         <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+         </div>
+      </div>
+      <!-- quiz box -->
+      <div class="quiz_box">
+         <header>
+            <div class="title">Shopification Quiz Application</div>
+            <div class="timer">
+               <div class="time_left_txt">Time Left</div>
+               <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+         </header>
+         <section>
+            <div class="que_text">
+            <!-- questions from JavaScript -->
+            </div>
+            <div class="option_list">
+            <!-- options from JavaScript -->
+            </div>
+         </section>
+         <!-- footer of Quiz Box -->
+         <footer>
+            <div class="total_que">
+               <!-- Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next</button>
+         </footer>
+      </div>
+      <!-- Result Box -->
+      <div class="result_box">
+         <div class="icon">
+            <i class="fa fa-crown"></i>
+         </div>
+         <div class="complete_text">You've completed the Quiz!</div>
+         <div class="score_text">
+        <!-- Score Result from JavaScript -->
+         </div>
+         <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+         </div>
+      </div>
+      <!-- end of quiz box -->
+      <!-- cart -->
+      <div class="cart-overlay">
+        <div class="cart">
+           <span class="close-cart"><i class="fa fa-window-close"></i></span>
+           <h2>your cart</h2>
+           <div class="cart-content"></div>
+           <div class="cart-footer">
+              <h3>cart total : $<span class="cart-total">0</span></h3>
+              <h3>points attainable : <span class="cart-point">0</span></h3>
+              <h3>Your accumulated points : <span class="cart-totalpoint">0</span></h3>
+              <button class="checkout-cart banner-btn">checkout</button>
+           </div>
+        </div>
+     </div>
+     <!-- end of cart -->
+     <!-- social panel -->
+     <div class="social-panel-container">
+        <div class="social-panel">
+           <p>Created by
+              <a target="_blank" href="">Shopification</a>
+           </p>
+           <button class="close-btn"><i class="fa fa-times"></i></button>
+           <h4>Get in touch on</h4>
+           <ul>
+              <li>
+                 <a href="https://twitter.com/" target="_blank">
+                 <i class="fa fa-twitter"></i>
+                 </a>
+              </li>
+              <li>
+                 <a href="https://linkedin.com/in/" target="_blank">
+                 <i class="fa fa-linkedin"></i>
+                 </a>
+              </li>
+              <li>
+                 <a href="https://facebook.com/" target="_blank">
+                 <i class="fa fa-facebook"></i>
+                 </a>
+              </li>
+              <li>
+                 <a href="https://instagram.com/" target="_blank">
+                 <i class="fa fa-instagram"></i>
+                 </a>
+              </li>
+           </ul>
+        </div>
+     </div>
+     <button class="floating-btn">
+     Get in Touch
+     </button>
+     <!--end of social panel -->
+      <!-- contentful -->
+      <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+      <!--  javascript -->
+      <script src="JS/script.js"></script>
+   </body>
+</html>
