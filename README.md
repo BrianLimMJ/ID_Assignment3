@@ -23,13 +23,13 @@ This website serves to provide E-commerce service which brings convenience for c
 - Smooth scrolling effect on click
 - Calculate points earned in cart 
 - Earn points when user completes transaction
+- Mini games to earn points
+- Use points to exchange for exclusive rewards
 
 ### Features Left To Be Implemented
-- Use points to exchange for exclusive rewards
 - Use restdb for contact form
 - Lottie Animations
-- Mini games to earn points
-- Survey to earn points
+- (Idea Dropped) Survey to earn points
 
 # Validator
 ### Site used for validation
@@ -62,7 +62,8 @@ This website serves to provide E-commerce service which brings convenience for c
 
 ### Images
 - [banner-bcg.jpeg](https://www.pinterest.com/pin/742601426040720227/).
-- [rewardBanner.png](https://www.freepik.com/free-photo/blur-shopping-mall_1135595.htm).
+- [rewardBanner.png](https://homemyhumz.blogspot.com/2016/12/best-home-interior-design-hd-images.html).
+- [book wallpaper](https://wallpapercave.com/tea-winter-and-books-wallpapers).
 - [Couch](https://www.zmartbuild.com/renovate-house-light-wall-framing/).
 - [Queen Panel Bed](https://www.bdcnetwork.com/marriott-hilton-and-ihg-continue-dominate-us-hotel-construction-pipeline-q2%E2%80%9920-close).
 - [Dresser](https://furniture.mu/pexels-photo-271660-1/).
@@ -89,6 +90,11 @@ This website serves to provide E-commerce service which brings convenience for c
 - [Online CSS beautifier](https://www.freeformatter.com/css-beautifier.html).
 
 # Development Progress
+### 13/2/2021 :
+- Create Quiz.html
+- Add JS to create quiz questions with timer
+- Add JS for user earn to earn points upon completion of the quiz with 3 or more correct answers
+
 ### 12/2/2021 :
 - Modify Navigation Bar
 - Add social media panel to all pages
@@ -138,6 +144,9 @@ This website serves to provide E-commerce service which brings convenience for c
 #### Some of the guides that helped us build this website:
 - [Contentful](https://www.youtube.com/watch?v=bLKkG0_4Xc4&ab_channel=PragmaticReviews).
 - [Smooth Scrolling Effect](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2).
+- [Quiz](https://www.w3schools.com/js/js_quiz.asp).
+- [Quiz Timer](https://www.youtube.com/watch?v=9-5URe9CykA&ab_channel=MuhanadHasan).
+- [Confirmation Box](https://www.youtube.com/watch?v=pOmLe1SaN60&ab_channel=dcode).
 
 # Contributors
 #### Ng Jian Wei <S*****269@connect.np.edu.sg>
