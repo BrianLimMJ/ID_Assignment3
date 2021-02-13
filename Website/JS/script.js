@@ -341,6 +341,7 @@ class Redeems {
         }
     }
 }
+let s = 0;
 
 // rewards ui
 class RewardUI {
@@ -348,24 +349,26 @@ class RewardUI {
         let result = "";
         redeems.forEach(redeem => {
             result += `
- <!-- single redeem -->
-      <article class="redeem">
-        <div class="img-container">
-          <img
-            src=${redeem.image}
-            alt="redeem"
-            class="redeem-img"
-          />
-          <button class="redeemBag-btn" data-id=${redeem.id}>
-            <i class="fa fa-gift"></i>
-            Redeem this
-          </button>
-        </div>
-        <h3>${redeem.title}</h3>
-        <h4>${redeem.point} Points</h4>
-      </article>
-      <!-- end of single redeem -->
- `;
+            <!-- single redeem -->
+                <article class="redeem">
+                    <div class="img-container">
+                    <img
+                        src=${redeem.image}
+                        alt="redeem"
+                        class="redeem-img"
+                    />
+                    <button class="redeemBag-btn" onclick="redeemItem(${redeem.point})" data-id=${redeem.id}>
+                        <i class="fa fa-gift"></i>
+                        Redeem this
+                    </button>
+                    </div>
+                    <h3>${redeem.title}</h3>
+                    <h4>${redeem.point} Points</h4>
+                </article>
+                <script>
+                </script>
+                <!-- end of single redeem -->
+            `;
         });
         try {
             redeemsDOM.innerHTML = result;
@@ -375,6 +378,17 @@ class RewardUI {
 
     }
 }
+
+function redeemItem(redeemPoints){
+    if(redeemPoints > totalPoints)
+    {
+        alert("not enough points");
+    }
+    else{
+        alert("enough points");
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const rewardUI = new RewardUI();
     const redeems = new Redeems();
@@ -705,3 +719,4 @@ window.onclick = function(event) {
     }
 }
 //* ---------------------- end of navigation bar panel JS ---------------------- *//
+
