@@ -90,10 +90,14 @@ This website serves to provide E-commerce service which brings convenience for c
 - [Online CSS beautifier](https://www.freeformatter.com/css-beautifier.html).
 
 # Development Progress
+
+### 14/2/2021
+-Modify about.html
 ### 13/2/2021 :
 - Create Quiz.html
 - Add JS to create quiz questions with timer
 - Add JS for user earn to earn points upon completion of the quiz with 3 or more correct answers
+- Modify about.html
 
 ### 12/2/2021 :
 - Modify Navigation Bar
