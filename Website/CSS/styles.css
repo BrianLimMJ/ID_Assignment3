@@ -819,7 +819,6 @@ body {
 	margin: auto;
 }
 
-
 .content-first-text{
 	text-align: center;
 	font-size: 18px;
@@ -834,11 +833,6 @@ body {
 	width: 33.33%;
 	float: left;
 	padding:5px;
-}
-
-.world-container {
-	margin: auto;
-	padding: 10px;
 }
 
 .content-second-img{
@@ -856,11 +850,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	padding: 20px;
-	
-
 }
-
-
 
 
 /* --------------- End Of About Page Content(about.html) ---------------- */
