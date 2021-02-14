@@ -1631,8 +1631,16 @@ footer button.show {
 
 
 /* --------------- end of confirmation box(redeem.html) ---------------- */
-
-
+/* --------------- lottie loading ---------------- */
+#lottie-loading-container{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(236, 228, 218);
+	padding: 100%;
+}
+/* --------------- end of lottie loading ---------------- */
 /* --------------- responsive webpage ----------------- */
 
 

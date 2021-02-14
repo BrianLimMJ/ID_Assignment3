@@ -31,80 +31,88 @@
          </div>
       </nav>
       <!-- end of navbar -->
-      <!-- start of quiz box -->
-      <!-- start Quiz button -->
-      <div class="start_btn"><button>Start Quiz</button></div>
-      <!-- Info Box -->
-      <div class="info_box">
-         <div class="info-title"><span>Some Rules of this Quiz</span></div>
-         <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-            <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
-            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You'll earn points on the basis of your correct answers.</div>
+      <div id="content-container">
+         <!-- start of quiz box -->
+         <!-- start quiz button -->
+         <div class="start_btn"><button>Start Quiz</button></div>
+         <!-- Info Box -->
+         <div class="info_box">
+            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+            <div class="info-list">
+               <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+               <div class="info">2. Once you select your answer, it can't be undone.</div>
+               <div class="info">3. You can't select any option once time goes off.</div>
+               <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+               <div class="info">5. You'll earn points on the basis of your correct answers.</div>
+            </div>
+            <div class="buttons">
+               <button class="quit">Exit Quiz</button>
+               <button class="restart">Continue</button>
+            </div>
          </div>
-         <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
+         <!-- Quiz Box -->
+         <div class="quiz_box">
+            <header>
+               <div class="title">Awesome Quiz Application</div>
+               <div class="timer">
+                  <div class="time_left_txt">Time Left</div>
+                  <div class="timer_sec">15</div>
+               </div>
+               <div class="time_line"></div>
+            </header>
+            <section>
+               <div class="que_text">
+                  <!-- Here I've inserted questions from JavaScript -->
+               </div>
+               <div class="option_list">
+                  <!-- Here I've inserted options from JavaScript -->
+               </div>
+            </section>
+            <!-- footer of Quiz Box -->
+            <footer>
+               <div class="total_que">
+                  <!-- Here I've inserted Question Count Number from JavaScript -->
+               </div>
+               <button class="next_btn">Next</button>
+            </footer>
          </div>
+         <!-- Result Box -->
+         <div class="result_box">
+            <div class="icon">
+               <i class="fa fa-quora"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text">
+               <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+               <button class="restart">Replay Quiz</button>
+               <button class="quit">Quit Quiz</button>
+            </div>
+         </div>
+         <!-- end of quiz box -->
+         <!-- cart -->
+         <div class="cart-overlay">
+            <div class="cart">
+               <span class="close-cart"><i class="fa fa-window-close"></i></span>
+               <h2>your cart</h2>
+               <div class="cart-content"></div>
+               <div class="cart-footer">
+                  <h3>cart total : $<span class="cart-total">0</span></h3>
+                  <h3>Reward Points Attainable : <span class="cart-point">0</span></h3>
+                  <h3>Reward Points Earned : <span class="cart-totalpoint">0</span></h3>
+                  <button class="checkout-cart banner-btn">checkout</button>
+               </div>
+            </div>
+         </div>
+         <!-- end of cart -->
       </div>
-      <!-- Quiz Box -->
-      <div class="quiz_box">
-         <header>
-            <div class="title">Awesome Quiz Application</div>
-            <div class="timer">
-               <div class="time_left_txt">Time Left</div>
-               <div class="timer_sec">15</div>
-            </div>
-            <div class="time_line"></div>
-         </header>
-         <section>
-            <div class="que_text">
-               <!-- Here I've inserted questions from JavaScript -->
-            </div>
-            <div class="option_list">
-               <!-- Here I've inserted options from JavaScript -->
-            </div>
-         </section>
-         <!-- footer of Quiz Box -->
-         <footer>
-            <div class="total_que">
-               <!-- Here I've inserted Question Count Number from JavaScript -->
-            </div>
-            <button class="next_btn">Next</button>
-         </footer>
-      </div>
-      <!-- Result Box -->
-      <div class="result_box">
-         <div class="icon">
-            <i class="fa fa-quora"></i>
-         </div>
-         <div class="complete_text">You've completed the Quiz!</div>
-         <div class="score_text">
-            <!-- Here I've inserted Score Result from JavaScript -->
-         </div>
-         <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
-         </div>
-      </div>
-      <!-- end of quiz box -->
-      <!-- cart -->
-      <div class="cart-overlay">
-         <div class="cart">
-            <span class="close-cart"><i class="fa fa-window-close"></i></span>
-            <h2>your cart</h2>
-            <div class="cart-content"></div>
-            <div class="cart-footer">
-               <h3>cart total : $<span class="cart-total">0</span></h3>
-               <h3>Reward Points Attainable : <span class="cart-point">0</span></h3>
-               <h3>Reward Points Earned : <span class="cart-totalpoint">0</span></h3>
-               <button class="checkout-cart banner-btn">checkout</button>
-            </div>
-         </div>
-      </div>
-      <!-- end of cart -->
+      <!-- lottie loading animation -->
+      <div id="lottie-loading-container">
+         <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_zzr95aqx.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+         <h1 style="text-align: center; letter-spacing: 2px;">Loading</h1>
+      </div>    
+      <!-- end of lottie loading animation -->
       <!-- social panel -->
       <div class="social-panel-container">
          <div class="social-panel">
@@ -143,6 +151,8 @@
       <!--end of social panel -->
       <!-- contentful -->
       <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+      <!-- lottie -->
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <!-- javascript -->
       <script src="JS/script.js"></script>
    </body>

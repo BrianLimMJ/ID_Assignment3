@@ -32,39 +32,47 @@
          </div>
       </nav>
       <!-- end of navbar -->
-      <!-- banner -->
-      <header class="hero">
-         <div class="banner">
-            <h1 class="banner-title">furniture collection</h1>
-            <a href="#section2"><button class="banner-btn" a href="#section2">shop now</button></a>
-         </div>
-      </header>
-      <!-- end of banner -->
-      <!-- products -->
-      <div class="main" id="section2"></div>
-      <section class="products">
-         <div class="section-title">
-            <h2>our products</h2>
-         </div>
-         <div class="products-center">
-         </div>
-      </section>
-      <!-- end of products -->
-      <!-- cart -->
-      <div class="cart-overlay">
-         <div class="cart">
-            <span class="close-cart"><i class="fa fa-window-close"></i></span>
-            <h2>your cart</h2>
-            <div class="cart-content"></div>
-            <div class="cart-footer">
-               <h3>cart total : $<span class="cart-total">0</span></h3>
-               <h3>Reward Points Attainable : <span class="cart-point">0</span></h3>
-               <h3>Reward Points Earned : <span class="cart-totalpoint">0</span></h3>
-               <button class="checkout-cart banner-btn">checkout</button>
+      <div id="content-container">
+         <!-- banner -->
+         <header class="hero">
+            <div class="banner">
+               <h1 class="banner-title">furniture collection</h1>
+               <a href="#section2"><button class="banner-btn" a href="#section2">shop now</button></a>
+            </div>
+         </header>
+         <!-- end of banner -->
+         <!-- products -->
+         <div class="main" id="section2"></div>
+         <section class="products">
+            <div class="section-title">
+               <h2>our products</h2>
+            </div>
+            <div class="products-center">
+            </div>
+         </section>
+         <!-- end of products -->
+         <!-- cart -->
+         <div class="cart-overlay">
+            <div class="cart">
+               <span class="close-cart"><i class="fa fa-window-close"></i></span>
+               <h2>your cart</h2>
+               <div class="cart-content"></div>
+               <div class="cart-footer">
+                  <h3>cart total : $<span class="cart-total">0</span></h3>
+                  <h3>Reward Points Attainable : <span class="cart-point">0</span></h3>
+                  <h3>Reward Points Earned : <span class="cart-totalpoint">0</span></h3>
+                  <button class="checkout-cart banner-btn">checkout</button>
+               </div>
             </div>
          </div>
+         <!-- end of cart -->
       </div>
-      <!-- end of cart -->
+      <!-- lottie loading animation -->
+      <div id="lottie-loading-container">
+         <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_47pyyfcf.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+         <h1 style="text-align: center; letter-spacing: 2px;">Loading</h1>
+      </div>    
+      <!-- end of lottie loading animation -->
       <!-- social panel -->
       <div class="social-panel-container">
          <div class="social-panel">
@@ -103,6 +111,8 @@
       <!--end of social panel -->
       <!-- contentful -->
       <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+      <!-- lottie -->
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <!--  javascript -->
       <script src="Website/JS/script.js"></script>
    </body>

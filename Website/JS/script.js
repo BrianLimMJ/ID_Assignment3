@@ -67,24 +67,24 @@ class UI {
         let result = "";
         products.forEach(product => {
             result += `
-<!-- single product -->
-     <article class="product">
-       <div class="img-container">
-         <img
-           src=${product.image}
-           alt="product"
-           class="product-img"
-         />
-         <button class="bag-btn" data-id=${product.id}>
-           <i class="fa fa-shopping-cart"></i>
-           add to bag
-         </button>
-       </div>
-       <h3>${product.title}</h3>
-       <h4>$${product.price}</h4>
-     </article>
-     <!-- end of single product -->
-`;
+            <!-- single product -->
+                <article class="product">
+                <div class="img-container">
+                    <img
+                    src=${product.image}
+                    alt="product"
+                    class="product-img"
+                    />
+                    <button class="bag-btn" data-id=${product.id}>
+                    <i class="fa fa-shopping-cart"></i>
+                    add to bag
+                    </button>
+                </div>
+                <h3>${product.title}</h3>
+                <h4>$${product.price}</h4>
+                </article>
+                <!-- end of single product -->
+            `;
         });
         try {
             productsDOM.innerHTML = result;
@@ -147,24 +147,24 @@ class UI {
         const div = document.createElement("div");
         div.classList.add("cart-item");
         div.innerHTML = `<!-- cart item -->
-         <!-- item image -->
-         <img src=${item.image} alt="product" />
-         <!-- item info -->
-         <div>
-           <h4>${item.title}</h4>
-           <h5>$${item.price}</h5>
-           <span class="remove-item" data-id=${item.id}>remove</span>
-         </div>
-         <!-- item functionality -->
-         <div>
-             <i class="fa fa-chevron-up" data-id=${item.id}></i>
-           <p class="item-amount">
-             ${item.amount}
-           </p>
-             <i class="fa fa-chevron-down" data-id=${item.id}></i>
-         </div>
-       <!-- cart item -->
- `;
+            <!-- item image -->
+            <img src=${item.image} alt="product" />
+            <!-- item info -->
+            <div>
+            <h4>${item.title}</h4>
+            <h5>$${item.price}</h5>
+            <span class="remove-item" data-id=${item.id}>remove</span>
+            </div>
+            <!-- item functionality -->
+            <div>
+                <i class="fa fa-chevron-up" data-id=${item.id}></i>
+            <p class="item-amount">
+                ${item.amount}
+            </p>
+                <i class="fa fa-chevron-down" data-id=${item.id}></i>
+            </div>
+        <!-- cart item -->
+    `;
         cartContent.appendChild(div);
     }
     showCart() {
@@ -804,3 +804,10 @@ const Confirm = {
     }
 };
 //* ---------------------- end of confirmation box JS ---------------------- *//
+
+//* ---------------------- loading JS ---------------------- *//
+
+setTimeout(function()
+{document.getElementById("lottie-loading-container").style.display = "none"},3000);
+
+//* ---------------------- end of loading JS ---------------------- *//
