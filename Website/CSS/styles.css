@@ -1636,7 +1636,6 @@ footer button.show {
 /* --------------- responsive webpage ----------------- */
 
 
-
 @media (max-width: 440px) {
 	.logo {
 		width: 90%;
@@ -1647,4 +1646,7 @@ footer button.show {
 	#menuText {
 		display: none;
 	}
+
+	/* About.html */
+	
 }
