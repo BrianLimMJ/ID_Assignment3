@@ -777,124 +777,90 @@ body {
 
 /* --------------- About Page Content(about.html) ---------------- */
 
+.paragraph-texts{
+	text-align: center;
+	line-height: 1.6;
+	padding: 20px;
+}
 .motto-image {
-	height: 600px;
+	height: 560px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.content-container {
+.motto-header{
+	color: #ffffff;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 150px;
+	position: relative;
+	animation: headerMoves 2s;
+}
+@keyframes headerMoves{
+	from {bottom: 100px;}
+	to{bottom: 0px;}
+}
+.what-we-do-container {
 	padding-top: 50px;
+	padding-bottom: 50px;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 }
-
-.content-left {
-	width: 30%;
-	height: 550px;
-	margin: auto;
+.content-title{
 	text-align: center;
-	background-color: #cceeff;
+	font-size: 48px;
+	padding: 20px;
+	border-top-style: outset;
+	border-bottom-style: outset;
+	width: 25%;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
-.content-middle {
-	width: 30%;
-	height: 550px;
-	margin: auto;
+
+.content-first-text{
 	text-align: center;
-	background-color: #b3e6ff;
-}
-
-.content-right {
-	width: 30%;
-	height: 550px;
-	margin: auto;
-	text-align: center;
-	background-color: #99ddff;
-}
-
-@keyframes contentMoves {
-	from {
-		top: 250px;
-	}
-	to {
-		top: 0px;
-	}
-}
-
-.content-header {
-	margin-top: 50px;
-	position: relative;
-	animation: headerMoves 5s;
-}
-
-@keyframes headerMoves {
-	from {
-		top: -100px;
-	}
-	to {
-		top: 0px;
-	}
-}
-
-.content-text {
-	margin: auto;
-	margin-top: 50px;
-	width: 75%;
+	font-size: 18px;
 	line-height: 1.6;
-	position: relative;
-	animation: contentMoves 5s;
+	padding: 20px;
 }
-
-.motto-images {
-	margin-top: 35px;
+.content-first-body{
+	text-align: center;
+	padding: 20px;
 }
-
-.technology-images {
-	margin-top: 5px;
-}
-
-.payment-images {
-	margin-top: 65px;
+.content-first-body-img{
+	width: 33.33%;
+	float: left;
+	padding:5px;
 }
 
 .world-container {
 	margin: auto;
 	padding: 10px;
-	margin-top: 55px;
+}
+
+.content-second-img{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	background-color: #f2f2f2;
+	justify-content: space-evenly;
+}
+.Office-container{
+	padding-top: 50px;
+}
+.office-img{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 20px;
+	
+
 }
 
-.world-left {
-	margin: auto;
-	width: 30%;
-}
 
-.world-right {
-	text-align: center;
-	margin: auto;
-	width: 30%;
-	height: 400px;
-	background-color: #ABEBC6;
-}
-
-.world-right-header {
-	margin-top: 10px;
-}
-
-.world-right-text {
-	margin: auto;
-	width: 75%;
-	margin-top: 15px;
-	line-height: 1.6;
-}
 
 
 /* --------------- End Of About Page Content(about.html) ---------------- */
