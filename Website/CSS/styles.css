@@ -869,7 +869,7 @@ body {
 .contact-container {
 	border-radius: 10px;
 	margin: auto;
-	height: 650px;
+	height: fit-content;
 	width: 650px;
 	text-align: center;
 	background-color: #ffffff;
@@ -939,9 +939,72 @@ body {
 	border-radius: 10px;
 	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
+#contact-msg{
+	min-height: 130px;
+	min-width: 322px;
+	max-width: 602px;
+}
+
+#contact-submit{
+	margin:50px;
+}
+
+#TOC-header{
+	padding: 10px;
+}
+.InfomationDetailsCard{
+	position: relative;
+	text-align: left;
+	
+	line-height: 1.4;
+	padding: 10px;
+	padding-left: 30px;
+}
+.InfomationDetailsCardDeleteBtn{
+	position: absolute;
+	bottom: 20px;
+	right: 25px;
+	padding: 5px 20px;
+	border-style: none;
+	background-color: rgb(129, 24, 24);
+	color: white;
+	border-radius: .25em;
+	transition: 0.85s;
+	cursor:pointer;
+}
+.InfomationDetailsCardDeleteBtn:hover{
+	background-color: rgb(241, 20, 20);
+	transition: 0.25s;
+	transform: scale(1.05);
+}
+#contact-return{
+	margin: 50px;
+}
 
 
 /* --------------- End Of Contact Page Content(contact.html) ---------------- */
+/* --------------- Contact Info Content(contactInfo.html) ------------------- */
+.contactInfo-container{
+	background-color: #ffffff;
+	margin: auto;
+	text-align: center;
+	width: 50%;
+	height: fit-content;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+
+.InfomationDetailsCard{
+	margin: 25px auto;
+	background-color: red;
+	width: 60%;
+	text-align: left;
+}
+/* --------------- End Of Contact Info Content(contactInfo.html) ------------ */
 
 
 /* --------------- Quiz(quiz.html) ---------------- */
