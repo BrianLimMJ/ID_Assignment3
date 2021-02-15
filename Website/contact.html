@@ -6,6 +6,7 @@
       <title>Contact Us</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
       <link rel="stylesheet" href="CSS/styles.css"/> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    </head>
    <body>
       <!-- navbar -->
@@ -43,27 +44,29 @@
                </span>
             </div>
             <div class = 'contact-form'>
-               <form>
-                  <div class="name-input" data-validate="Name is required">
-                     <input class="userInput" type="text" name="name" placeholder="Enter full name" required='true'>                   
+               <form id ='myForm'>
+                  <div class="name-input">
+                     <input class="userInput" id="contact-name" type="text" name="name" placeholder="Enter full name" required='true'>                   
                   </div>
-                  <div class="email-input" data-validate = "Valid email is required: ex@abc.xyz">
-                     <input class="userInput" type="text" name="email" placeholder="Enter email addess"required='true'>
+                  <div class="email-input">
+                     <input class="userInput" id="contact-email" type="text" name="email" placeholder="Enter email Address"required='true'>
                   </div>
-                  <div class="number-input" data-validate="Phone is required">
-                     <input class="userInput" type="text" name="phone" placeholder="Enter phone number"required='true'>
+                  <div class="number-input">
+                     <input class="userInput" id="contact-number" type="text" name="phone" placeholder="Enter phone number"required='true'>
                   </div>
-                  <div class="msg-input" data-validate = "Message is required">
-                     <textarea class="userInput" name="message" placeholder="Enter your message here..."></textarea>
+                  <div class="msg-input">
+                     <textarea class="userInput" id="contact-msg" name="message" placeholder="Enter your message here..."></textarea>
                   </div>
                   <div class="contact-container-form-btn">
-                     <button class="contact-form-btn">
-                     <span>
-                     Submit                       
-                     </span>
-                     </button>
+                        <button type="submit"  id="contact-submit">Submit</button>     
                   </div>
                </form>
+               <div id = 'InfomationDetails'>
+                  <h2 id = 'TOC-header'>Table of Contacts</h2>
+                  <div id='InfomationDetailsContainer'>
+
+                  </div>
+               </div>
             </div>
          </div>
       </div>
@@ -122,6 +125,9 @@
       <!-- contentful -->
       <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
       <!-- javascript -->
+      <script src="JS/contact.js"></script>
       <script src="JS/script.js"></script>
+      <!-- Lottie -->
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
    </body>
 </html>
