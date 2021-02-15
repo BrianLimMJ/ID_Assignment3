@@ -805,9 +805,13 @@ const Confirm = {
 };
 //* ---------------------- end of confirmation box JS ---------------------- *//
 
+//* ---------------------- Contact JS -------------------------------------- *//
+//* ---------------------- end of Contact JS ------------------------------ *//
+
 //* ---------------------- loading JS ---------------------- *//
 
 setTimeout(function()
 {document.getElementById("lottie-loading-container").style.display = "none"},3000);
 
 //* ---------------------- end of loading JS ---------------------- *//
+
