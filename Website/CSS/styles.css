@@ -794,18 +794,16 @@ body {
 	font-size: 36px;
 	text-align: center;
 	padding-top: 150px;
-	position: relative;
-	animation: headerMoves 2s;
 }
-@keyframes headerMoves{
-	from {bottom: 100px;}
-	to{bottom: 0px;}
-}
+
 .what-we-do-container {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	display: flex;
+	flex-direction: row;
+	align-items: center;
 	justify-content: center;
+	
 }
 .content-title{
 	text-align: center;
@@ -819,11 +817,13 @@ body {
 	margin: auto;
 }
 
+
 .content-first-text{
 	text-align: center;
 	font-size: 18px;
 	line-height: 1.6;
 	padding: 20px;
+	
 }
 .content-first-body{
 	text-align: center;
@@ -834,6 +834,9 @@ body {
 	float: left;
 	padding:5px;
 }
+.content-first-body-header{
+	padding: 10px;
+}
 
 .content-second-img{
 	display: flex;
@@ -841,6 +844,8 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
+
+
 .Office-container{
 	padding-top: 50px;
 }
@@ -852,6 +857,42 @@ body {
 	padding: 20px;
 }
 
+/* ----------- Mobile ------------------- */
+@media only screen and (max-width: 600px)
+{
+	/* About.html */
+	
+	.motto-header{
+		font-size: 18px;		
+	}
+	.content-title{
+		width: 50%;
+	}
+	.content-first-body-img
+	{
+		width: auto;
+	}
+	
+	/* Contact.html */
+	#Shopification-history{
+		width: 85%;
+	}
+
+}
+
+@media only screen and (max-height: 1000px)
+{
+	#select-bed-img{
+		height: 250px;
+	}
+	#customer-service-img{
+		height: 250px;
+	}
+
+	#e-payment-img{
+		height: 251px;
+	}
+}
 
 /* --------------- End Of About Page Content(about.html) ---------------- */
 
@@ -859,7 +900,8 @@ body {
 /* --------------- Contact Page Content(contact.html) ---------------- */
 
 .contact-image {
-	height: 800px;
+	height: auto;
+	padding: 50px 0;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -873,11 +915,10 @@ body {
 	width: 650px;
 	text-align: center;
 	background-color: #ffffff;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
 }
 
 .contact-form-image {
@@ -894,37 +935,17 @@ body {
 	padding: 70px;
 	line-height: 1.6;
 	color: #ffffff;
-	position: relative;
-	animation: header-one-Moves 3s;
-}
-
-@keyframes header-one-Moves {
-	from {
-		left: 250px;
-	}
-	to {
-		left: 0px;
-	}
 }
 
 .contact-header-two {
 	line-height: 1.6;
-	color: #ffffff;
-	position: relative;
-	animation: header-two-Moves 4s;
-}
-
-@keyframes header-two-Moves {
-	from {
-		left: 250px;
-	}
-	to {
-		left: 0px;
-	}
+	color: #ffffff;	
 }
 
 .contact-form {
 	margin: 3px;
+	margin: auto;
+	height: fit-content;
 }
 
 .labels {
@@ -933,8 +954,8 @@ body {
 
 .userInput {
 	padding: 10px;
-	width: 50%;
 	margin: 15px;
+	width: 322px;
 	border: 0;
 	border-radius: 10px;
 	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
@@ -949,41 +970,10 @@ body {
 	margin:50px;
 }
 
-#TOC-header{
-	padding: 10px;
-}
-.InfomationDetailsCard{
-	position: relative;
-	text-align: left;
-	
-	line-height: 1.4;
-	padding: 10px;
-	padding-left: 30px;
-}
-.InfomationDetailsCardDeleteBtn{
-	position: absolute;
-	bottom: 20px;
-	right: 25px;
-	padding: 5px 20px;
-	border-style: none;
-	background-color: rgb(129, 24, 24);
-	color: white;
-	border-radius: .25em;
-	transition: 0.85s;
-	cursor:pointer;
-}
-.InfomationDetailsCardDeleteBtn:hover{
-	background-color: rgb(241, 20, 20);
-	transition: 0.25s;
-	transform: scale(1.05);
-}
+
 #contact-return{
 	margin: 50px;
 }
-
-
-/* --------------- End Of Contact Page Content(contact.html) ---------------- */
-/* --------------- Contact Info Content(contactInfo.html) ------------------- */
 .contactInfo-container{
 	background-color: #ffffff;
 	margin: auto;
@@ -998,13 +988,82 @@ body {
 }
 
 
-.InfomationDetailsCard{
-	margin: 25px auto;
-	background-color: red;
-	width: 60%;
-	text-align: left;
+#TOC-header{
+	padding: 15px;
+	border-top-style: outset;
+	border-bottom-style: outset;
+	width: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
-/* --------------- End Of Contact Info Content(contactInfo.html) ------------ */
+.InfomationDetailsCard{
+	position: relative;
+	text-align: left;
+	line-height: 1.4;
+	margin: 25px auto;
+	
+	padding: 10px;
+	padding-left: 30px;
+}
+.InfomationDetailsCardDeleteBtn{
+	position: absolute;
+	bottom: 1px;
+	right: 2px;
+	padding: 5px 20px;
+	border-style: none;
+	background-color: rgb(129, 24, 24);
+	color: white;
+	border-radius: .25em;
+	transition: 0.85s;
+	cursor:pointer;
+}
+.InfomationDetailsCardDeleteBtn:hover{
+	background-color: rgb(241, 20, 20);
+	transition: 0.25s;
+	transform: scale(1.05);
+}
+
+/* ----------- Mobile ------------------- */
+@media only screen and (max-width: 600px)
+{
+	/* Contact.html */
+	.contact-container{
+		width: 80%;
+	}
+	
+	#TOC-header{
+		width: 50%;
+	}
+	
+	
+	.userInput{
+		width: 90%;
+	}
+
+	#contact-msg{
+		min-height: 130px;
+		min-width: 280px;
+		max-width: 350px;
+	}
+	
+	#offices-images{
+		width: 90%;
+	}
+	.InfomationDetailsCard{
+		width:100%
+	}
+	.InfomationDetailsCardDeleteBtn{
+		right: 20px;
+	}
+	
+}
+
+
+/* --------------- End Of Contact Page Content(contact.html) ---------------- */
+
+
+
 
 
 /* --------------- Quiz(quiz.html) ---------------- */
@@ -1718,6 +1777,5 @@ footer button.show {
 		display: none;
 	}
 
-	/* About.html */
 	
 }
