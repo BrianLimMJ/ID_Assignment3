@@ -25,10 +25,12 @@ This website serves to provide E-commerce service which brings convenience for c
 - Earn points when user completes transaction
 - Mini games to earn points
 - Use points to exchange for exclusive rewards
-
-### Features Left To Be Implemented
 - Use restdb for contact form
 - Lottie Animations
+
+### Features Left To Be Implemented
+
+
 - (Idea Dropped) Survey to earn points
 
 # Validator
@@ -47,9 +49,6 @@ This website serves to provide E-commerce service which brings convenience for c
 ### Font Pair
 - [Merriweather & Lora](https://fontpair.co/pairing/lora-and-merriweather).
 
-### Bootstrap
-- [Contact.html Container](https://getbootstrap.com/docs/4.1/layout/grid/).
-- [Contact.html Form](https://getbootstrap.com/docs/4.0/components/forms/).
 
 ### Contentful
 - [Contentful](https://www.contentful.com/).
@@ -83,6 +82,11 @@ This website serves to provide E-commerce service which brings convenience for c
 - [Google Pixel 4a](https://www.tomsguide.com/best-picks/best-phones).
 - [Asus Rog Phone III](https://www.theverge.com/2020/10/5/21502186/asus-rog-phone-3-release-date-price).
 - [Xiaomi Black Shark III](https://www.iloveqatar.net/news/technology/store-974-is-qatars-official-store-for-black-shark-products).
+- [Contact.jpg](Lost the link).
+- [Select Bed.jpg](https://www.freepik.com/premium-photo/handsome-man-choosing-mattress-furniture-store_7800422.htm).
+- [Customer Service.jpg](http://www.customerexperienceinsight.com/unique-ways-reignite-customer-service-staff/).
+- [e-commerce.jpg](https://www.forbes.com/sites/kimberlywhitler/2019/11/16/the-future-of-ecommerce-and-how-the-experience-will-change/?sh=2e72c63205be).
+-[e-payment.jpg](https://thefinanser.com/2020/10/an-interview-with-gps-about-the-post-covid-payments-perspective.html/payment/).
 
 # Code Beautifier 
 - [Online HTML beautifier](https://codebeautify.org/htmlviewer/).
@@ -91,8 +95,13 @@ This website serves to provide E-commerce service which brings convenience for c
 
 # Development Progress
 
+### 16/2/2021
+- Add responsiveness to contact and about.html
+### 15/2/2021
+- Add RestDB for contact.html
+
 ### 14/2/2021
--Modify about.html
+- Modify about.html
 ### 13/2/2021 :
 - Create Quiz.html
 - Add JS to create quiz questions with timer
