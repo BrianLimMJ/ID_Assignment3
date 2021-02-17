@@ -3,9 +3,7 @@
 
 /* --------------- Normalize.css ---------------- */
 
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 
 /**
    * Render the `main` element consistently in IE.
@@ -14,7 +12,6 @@
 main {
 	display: block;
 }
-
 
 /**
    * Correct the font size and margin on `h1` elements within `section` and
@@ -25,7 +22,6 @@ h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 }
-
 
 /* Grouping content
 	 ========================================================================== */
@@ -45,7 +41,6 @@ hr {
 	/* 2 */
 }
 
-
 /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
@@ -58,7 +53,6 @@ pre {
 	/* 2 */
 }
 
-
 /* Text-level semantics
 	 ========================================================================== */
 
@@ -70,7 +64,6 @@ pre {
 a {
 	background-color: transparent;
 }
-
 
 /**
    * 1. Remove the bottom border in Chrome 57-
@@ -85,7 +78,6 @@ abbr[title] {
 	text-decoration: underline dotted;
 	/* 2 */
 }
-
 
 /**
    * Add the correct font weight in Chrome, Edge, and Safari.
@@ -111,7 +103,6 @@ samp {
 	/* 2 */
 }
 
-
 /**
    * Add the correct font size in all browsers.
    */
@@ -119,7 +110,6 @@ samp {
 small {
 	font-size: 80%;
 }
-
 
 /**
    * Prevent `sub` and `sup` elements from affecting the line height in
@@ -142,10 +132,8 @@ sup {
 	top: -0.5em;
 }
 
-
 /* Embedded content
 	 ========================================================================== */
-
 
 /**
    * Remove the border on images inside links in IE 10.
@@ -154,7 +142,6 @@ sup {
 img {
 	border-style: none;
 }
-
 
 /* Forms
 	 ========================================================================== */
@@ -180,7 +167,6 @@ textarea {
 	/* 2 */
 }
 
-
 /**
    * Show the overflow in IE.
    * 1. Show the overflow in Edge.
@@ -191,7 +177,6 @@ input {
 	/* 1 */
 	overflow: visible;
 }
-
 
 /**
    * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -204,7 +189,6 @@ select {
 	text-transform: none;
 }
 
-
 /**
    * Correct the inability to style clickable types in iOS and Safari.
    */
@@ -215,7 +199,6 @@ button,
 [type="submit"] {
 	-webkit-appearance: button;
 }
-
 
 /**
    * Remove the inner border and padding in Firefox.
@@ -229,7 +212,6 @@ button::-moz-focus-inner,
 	padding: 0;
 }
 
-
 /**
    * Restore the focus styles unset by the previous rule.
    */
@@ -241,7 +223,6 @@ button:-moz-focusring,
 	outline: 1px dotted ButtonText;
 }
 
-
 /**
    * Correct the padding in Firefox.
    */
@@ -249,7 +230,6 @@ button:-moz-focusring,
 fieldset {
 	padding: 0.35em 0.75em 0.625em;
 }
-
 
 /**
    * 1. Correct the text wrapping in Edge and IE.
@@ -273,7 +253,6 @@ legend {
 	/* 1 */
 }
 
-
 /**
    * Add the correct vertical alignment in Chrome, Firefox, and Opera.
    */
@@ -282,7 +261,6 @@ progress {
 	vertical-align: baseline;
 }
 
-
 /**
    * Remove the default vertical scrollbar in IE 10+.
    */
@@ -290,7 +268,6 @@ progress {
 textarea {
 	overflow: auto;
 }
-
 
 /**
    * 1. Add the correct box sizing in IE 10.
@@ -305,7 +282,6 @@ textarea {
 	/* 2 */
 }
 
-
 /**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
@@ -314,7 +290,6 @@ textarea {
 [type="number"]::-webkit-outer-spin-button {
 	height: auto;
 }
-
 
 /**
    * 1. Correct the odd appearance in Chrome and Safari.
@@ -328,7 +303,6 @@ textarea {
 	/* 2 */
 }
 
-
 /**
    * Remove the inner padding in Chrome and Safari on macOS.
    */
@@ -336,7 +310,6 @@ textarea {
 [type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
-
 
 /**
    * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -350,7 +323,6 @@ textarea {
 	/* 2 */
 }
 
-
 /* Interactive
 	 ========================================================================== */
 
@@ -362,7 +334,6 @@ textarea {
 details {
 	display: block;
 }
-
 
 /*
    * Add the correct display in all browsers.
@@ -385,7 +356,6 @@ template {
 	display: none;
 }
 
-
 /**
    * Add the correct display in IE 10.
    */
@@ -393,7 +363,6 @@ template {
 [hidden] {
 	display: none;
 }
-
 
 /* --------------- End of Normalize.css ---------------- */
 
@@ -422,7 +391,6 @@ body {
 	--mainSpacing: 0.1rem;
 	--mainTransition: all 0.3s linear;
 }
-
 
 /* --------------- Navbar ---------------- */
 
@@ -507,9 +475,7 @@ body {
 	display: block;
 }
 
-
 /* --------------- End of Navbar ---------------- */
-
 
 /* --------------- Banner(Index.html)---------------- */
 
@@ -553,9 +519,7 @@ body {
 	color: var(--primaryColor);
 }
 
-
 /* --------------- End of Banner(Index.html) ---------------- */
-
 
 /* --------------- Products(Index.html) & redeems(Index.html) ---------------- */
 
@@ -654,9 +618,7 @@ body {
 	text-align: center;
 }
 
-
 /* --------------- End Of Products(Index.html) & redeems(Index.html) ---------------- */
-
 
 /* --------------- Cart ---------------- */
 
@@ -696,13 +658,6 @@ body {
 	visibility: visible;
 }
 
-@media screen and (min-width: 768px) {
-	.cart {
-		width: 30vw;
-		min-width: 450px;
-	}
-}
-
 .close-cart {
 	font-size: 1.7rem;
 	cursor: pointer;
@@ -715,8 +670,7 @@ body {
 	margin-bottom: 2rem;
 }
 
-
-/*---------- Cart Item(index.html) -------------------- */
+/*---------- Cart Item -------------------- */
 
 .cart-item {
 	display: grid;
@@ -771,9 +725,7 @@ body {
 	margin-bottom: 1rem;
 }
 
-
 /* --------------- End of Cart(index.html) ---------------- */
-
 
 /* --------------- About Page Content(about.html) ---------------- */
 
@@ -782,6 +734,7 @@ body {
 	line-height: 1.6;
 	padding: 20px;
 }
+
 .motto-image {
 	height: 560px;
 	background-position: center;
@@ -805,6 +758,7 @@ body {
 	justify-content: center;
 	
 }
+
 .content-title{
 	text-align: center;
 	font-size: 48px;
@@ -817,7 +771,6 @@ body {
 	margin: auto;
 }
 
-
 .content-first-text{
 	text-align: center;
 	font-size: 18px;
@@ -825,15 +778,18 @@ body {
 	padding: 20px;
 	
 }
+
 .content-first-body{
 	text-align: center;
 	padding: 20px;
 }
+
 .content-first-body-img{
 	width: 33.33%;
 	float: left;
 	padding:5px;
 }
+
 .content-first-body-header{
 	padding: 10px;
 }
@@ -844,7 +800,6 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
-
 
 .Office-container{
 	padding-top: 50px;
@@ -858,45 +813,7 @@ body {
 	padding: 20px;
 }
 
-/* ----------- Mobile ------------------- */
-@media only screen and (max-width: 600px)
-{
-	/* About.html */
-	
-	.motto-header{
-		font-size: 18px;		
-	}
-	.content-title{
-		width: 50%;
-	}
-	.content-first-body-img
-	{
-		width: auto;
-	}
-	
-	/* Contact.html */
-	#Shopification-history{
-		width: 85%;
-	}
-
-}
-
-@media only screen and (max-height: 1000px)
-{
-	#select-bed-img{
-		height: 250px;
-	}
-	#customer-service-img{
-		height: 250px;
-	}
-
-	#e-payment-img{
-		height: 251px;
-	}
-}
-
 /* --------------- End Of About Page Content(about.html) ---------------- */
-
 
 /* --------------- Contact Page Content(contact.html) ---------------- */
 
@@ -971,7 +888,6 @@ body {
 	margin:50px;
 }
 
-
 #contact-return{
 	margin: 50px;
 }
@@ -988,7 +904,6 @@ body {
 	left: 0;
 }
 
-
 #TOC-header{
 	padding: 15px;
 	border-top-style: outset;
@@ -998,6 +913,7 @@ body {
 	right: 0;
 	margin: auto;
 }
+
 .InfomationDetailsCard{
 	position: relative;
 	text-align: left;
@@ -1007,6 +923,7 @@ body {
 	padding: 10px;
 	padding-left: 30px;
 }
+
 .InfomationDetailsCardDeleteBtn{
 	position: absolute;
 	bottom: 1px;
@@ -1019,6 +936,7 @@ body {
 	transition: 0.85s;
 	cursor:pointer;
 }
+
 .InfomationDetailsCardDeleteBtn:hover{
 	background-color: rgb(241, 20, 20);
 	transition: 0.25s;
@@ -1041,7 +959,6 @@ body {
 		width: 50%;
 	}
 	
-	
 	.userInput{
 		width: 90%;
 	}
@@ -1055,21 +972,17 @@ body {
 	#offices-images{
 		width: 90%;
 	}
+
 	.InfomationDetailsCard{
 		width:100%
 	}
+
 	.InfomationDetailsCardDeleteBtn{
 		right: 20px;
 	}
-	
 }
 
-
 /* --------------- End Of Contact Page Content(contact.html) ---------------- */
-
-
-
-
 
 /* --------------- Quiz(quiz.html) ---------------- */
 
@@ -1079,7 +992,7 @@ body {
 
 ::selection {
 	color: #fff;
-	background: #007bff;
+	background: #00ffd5;
 }
 
 .start_btn,
@@ -1105,7 +1018,7 @@ body {
 .start_btn button {
 	font-size: 25px;
 	font-weight: 500;
-	color: #007bff;
+	color: #dd7d50;
 	padding: 15px 30px;
 	outline: none;
 	border: none;
@@ -1114,7 +1027,7 @@ body {
 }
 
 .start_btn button:hover {
-	background: #007bff;
+	background: #dd7d50;
 	color: #fff;
 }
 
@@ -1151,7 +1064,7 @@ body {
 
 .info_box .info-list .info span {
 	font-weight: 600;
-	color: #007bff;
+	color: #dd7d50;
 }
 
 .info_box .buttons {
@@ -1173,7 +1086,7 @@ body {
 	border: none;
 	outline: none;
 	border-radius: 5px;
-	border: 1px solid #007bff;
+	border: 1px solid #dd7d50;
 	transition: all 0.3s ease;
 }
 
@@ -1206,9 +1119,9 @@ body {
 }
 
 .quiz_box header .timer {
-	color: #004085;
-	background: #cce5ff;
-	border: 1px solid #b8daff;
+	color: rgb(184, 102, 9);
+	background: rgb(250, 242, 215);
+	border: 1px solid #d39d39;
 	height: 45px;
 	padding: 0 8px;
 	border-radius: 5px;
@@ -1243,7 +1156,7 @@ body {
 	bottom: 0px;
 	left: 0px;
 	height: 3px;
-	background: #007bff;
+	background: #dd7d50;
 }
 
 section {
@@ -1262,8 +1175,8 @@ section .option_list {
 }
 
 section .option_list .option {
-	background: aliceblue;
-	border: 1px solid #84c5fe;
+	background: rgb(250, 242, 215);
+	border: 1px solid #d39d39;
 	border-radius: 5px;
 	padding: 8px 15px;
 	font-size: 17px;
@@ -1280,9 +1193,8 @@ section .option_list .option:last-child {
 }
 
 section .option_list .option:hover {
-	color: #004085;
-	background: #cce5ff;
-	border: 1px solid #b8daff;
+	background: #ecd99b;
+	border: 1px solid #dda52b;
 }
 
 section .option_list .option.correct {
@@ -1358,8 +1270,8 @@ footer button {
 	outline: none;
 	color: #fff;
 	border-radius: 5px;
-	background: #007bff;
-	border: 1px solid #007bff;
+	background: #dd7d50;
+	border: 1px solid #dd7d50;
 	line-height: 10px;
 	opacity: 0;
 	pointer-events: none;
@@ -1368,7 +1280,7 @@ footer button {
 }
 
 footer button:hover {
-	background: #0263ca;
+	background: #e6c27f;
 }
 
 footer button.show {
@@ -1394,7 +1306,7 @@ footer button.show {
 
 .result_box .icon {
 	font-size: 100px;
-	color: #007bff;
+	color: #dd7d50;
 	margin-bottom: 10px;
 }
 
@@ -1430,32 +1342,30 @@ footer button.show {
 	border: none;
 	outline: none;
 	border-radius: 5px;
-	border: 1px solid #007bff;
+	border: 1px solid #dd7d50;
 	transition: all 0.3s ease;
 }
 
 .buttons button.restart {
 	color: #fff;
-	background: #007bff;
+	background: #dd7d50;
 }
 
 .buttons button.restart:hover {
-	background: #0263ca;
+	background: #dd7d50;
 }
 
 .buttons button.quit {
-	color: #007bff;
+	color: #dd7d50;
 	background: #fff;
 }
 
 .buttons button.quit:hover {
 	color: #fff;
-	background: #007bff;
+	background: #dd7d50;
 }
 
-
 /* --------------- end of Quiz(quiz.html) ---------------- */
-
 
 /* --------------- social panel ---------------- */
 
@@ -1606,7 +1516,6 @@ footer button.show {
 	text-decoration: none;
 }
 
-
 /* --------------- End Of Social Panel ---------------- */
 
 
@@ -1756,7 +1665,6 @@ footer button.show {
 	}
 }
 
-
 /* --------------- end of confirmation box(redeem.html) ---------------- */
 /* --------------- lottie loading ---------------- */
 #lottie-loading-container{
@@ -1768,8 +1676,50 @@ footer button.show {
 	padding: 100%;
 }
 /* --------------- end of lottie loading ---------------- */
-/* --------------- responsive webpage ----------------- */
 
+/* --------------- responsive webpage css ----------------- */
+
+@media only screen and (max-width: 600px)
+{
+	/* About.html */
+	
+	.motto-header{
+		font-size: 18px;		
+	}
+	.content-title{
+		width: 50%;
+	}
+	.content-first-body-img
+	{
+		width: auto;
+	}
+	
+	/* Contact.html */
+	#Shopification-history{
+		width: 85%;
+	}
+}
+
+@media only screen and (max-height: 1000px)
+{
+	#select-bed-img{
+		height: 250px;
+	}
+	#customer-service-img{
+		height: 250px;
+	}
+
+	#e-payment-img{
+		height: 251px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.cart {
+		width: 30vw;
+		min-width: 450px;
+	}
+}
 
 @media (max-width: 440px) {
 	.logo {
@@ -1780,7 +1730,7 @@ footer button.show {
 	}
 	#menuText {
 		display: none;
-	}
-
-	
+	}	
 }
+
+/* --------------- end of responsive webpage css ----------------- */
