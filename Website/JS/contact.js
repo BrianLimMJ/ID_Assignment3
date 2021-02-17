@@ -10,15 +10,24 @@ document.getElementById('contact-submit').addEventListener('click',function subm
     let contactName = document.getElementById('contact-name').value;
     let contactEmail = document.getElementById('contact-email').value;
     let contactNumber = document.getElementById('contact-number').value;
+    if(Number.isInteger(parseInt(contactNumber)) == false)
+    {
+      alert("Error contact number input was not a number");
+      document.getElementById('contact-name').value = '';
+      document.getElementById('contact-email').value = '';
+      document.getElementById('contact-number').value = '';
+      document.getElementById("contact-msg").value= '';
+      return;
+    }
     let contactMessage = document.getElementById("contact-msg").value;
-    
     
     let jsondata = {
         "name": contactName,
-        'number': contactNumber,
+        'number': parseInt(contactNumber),
         "email": contactEmail,
         "message": contactMessage
       };
+
     let settings = {
     "async": true,
     "crossDomain": true,
@@ -38,21 +47,24 @@ document.getElementById('contact-submit').addEventListener('click',function subm
     });  
     alert('Thank you for contacting us, we will be with you shortly');
     
-
     document.getElementById('contact-name').value = '';
     document.getElementById('contact-email').value = '';
     document.getElementById('contact-number').value = '';
     document.getElementById("contact-msg").value= '';
-    
+
     $("#myForm").hide();
     $("#InfomationDetails").show();
-    getContactInfo();
-
-      
+    getContactInfo(1);
 });
-function getContactInfo(){
+function getContactInfo(option){
     $("#InfomationDetailsContainer").empty();
-    $("#InfomationDetailsContainer").append('<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_zwNx9A.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;margin:auto;"  loop  autoplay></lottie-player>');
+    if (option == 1){
+      $("#InfomationDetailsContainer").append('<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_jFtJZy.json"  background="transparent"  speed="2"  style="width: 300px; height: 300px; margin:auto;"  loop autoplay></lottie-player>');
+    }
+    if (option == 2){
+      $("#InfomationDetailsContainer").append('<lottie-player src="https://assets2.lottiefiles.com/temp/lf20_UWbx73.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin:auto;"  loop  autoplay></lottie-player>');
+
+    }
     let settings = {
         "async": true,
         "crossDomain": true,
@@ -65,11 +77,10 @@ function getContactInfo(){
         }
       }
       
-      $.ajax(settings).done(function (response) {
-        console.log(response,response.length == 0);
+      $.ajax(settings).done(function (response) {     
         $("#InfomationDetailsContainer").empty();
         if (response.length == 0){
-            $("#InfomationDetailsContainer").append('<p>There are none available</p>');
+            $("#InfomationDetailsContainer").append('<p id = "error-msg">There are none available</p>');
         }
         else{
             for (let i = 0; i < response.length ; i++) {
@@ -96,9 +107,8 @@ function returnToForm(){
     $("#myForm").show();
     $("#InfomationDetails").hide();
 }
-function DeleteContact(objectId){
-    $("#InfomationDetailsContainer").append('<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_zwNx9A.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;margin:auto;"  loop  autoplay></lottie-player>');
 
+function DeleteContact(objectId){
     let settings = {
         "async": true,
         "crossDomain": true,
@@ -115,5 +125,5 @@ function DeleteContact(objectId){
         console.log(response);
       });
       $("#InfomationDetailsContainer").empty();
-      getContactInfo()
+      getContactInfo(2)
 }

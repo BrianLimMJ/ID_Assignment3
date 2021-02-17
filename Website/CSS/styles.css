@@ -849,6 +849,7 @@ body {
 .Office-container{
 	padding-top: 50px;
 }
+
 .office-img{
 	display: flex;
 	flex-direction: row;
@@ -1022,6 +1023,10 @@ body {
 	background-color: rgb(241, 20, 20);
 	transition: 0.25s;
 	transform: scale(1.05);
+}
+
+#error-msg{
+	padding: 15px;
 }
 
 /* ----------- Mobile ------------------- */
