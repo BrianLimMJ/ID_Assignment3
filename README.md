@@ -38,7 +38,7 @@ This website serves to provide E-commerce service which brings convenience for c
 - [JSHint Javascript Validation Service](https://jshint.com/).
 
 ### Validation Result
-- [HTML,CSS,JS Results](https://imgur.com/ "https://imgur.com").
+- [HTML,CSS,JS Results](https://imgur.com/a/4p4VgKw/).
 
 # Credits
 ### API
@@ -46,7 +46,6 @@ This website serves to provide E-commerce service which brings convenience for c
 
 ### Font Pair
 - [Merriweather & Lora](https://fontpair.co/pairing/lora-and-merriweather).
-
 
 ### Contentful
 - [Contentful](https://www.contentful.com/).
@@ -57,9 +56,16 @@ This website serves to provide E-commerce service which brings convenience for c
 ### CSS
 - [Normalize.CSS](https://necolas.github.io/normalize.css/).
 
-### Images
+### Image files
 - [banner-bcg.jpeg](https://www.pinterest.com/pin/742601426040720227/).
 - [rewardBanner.png](https://homemyhumz.blogspot.com/2016/12/best-home-interior-design-hd-images.html).
+- [Contact.jpg](https://wallpaperaccess.com/vintage-telephone).
+- [selectbed.jpg](https://www.freepik.com/premium-photo/handsome-man-choosing-mattress-furniture-store_7800422.htm).
+- [customerService.jpg](http://www.customerexperienceinsight.com/unique-ways-reignite-customer-service-staff/).
+- [e-commerce.jpg](https://www.forbes.com/sites/kimberlywhitler/2019/11/16/the-future-of-ecommerce-and-how-the-experience-will-change/?sh=2e72c63205be).
+- [e-payment.jpg](https://thefinanser.com/2020/10/an-interview-with-gps-about-the-post-covid-payments-perspective.html/payment/).
+
+### Image files used in contentful api
 - [book wallpaper](https://wallpapercave.com/tea-winter-and-books-wallpapers).
 - [Couch](https://www.zmartbuild.com/renovate-house-light-wall-framing/).
 - [Queen Panel Bed](https://www.bdcnetwork.com/marriott-hilton-and-ihg-continue-dominate-us-hotel-construction-pipeline-q2%E2%80%9920-close).
@@ -80,11 +86,6 @@ This website serves to provide E-commerce service which brings convenience for c
 - [Google Pixel 4a](https://www.tomsguide.com/best-picks/best-phones).
 - [Asus Rog Phone III](https://www.theverge.com/2020/10/5/21502186/asus-rog-phone-3-release-date-price).
 - [Xiaomi Black Shark III](https://www.iloveqatar.net/news/technology/store-974-is-qatars-official-store-for-black-shark-products).
-- [contact.jpg](https://wallpaperaccess.com/old-phone).
-- [selectbed.jpg](https://www.freepik.com/premium-photo/handsome-man-choosing-mattress-furniture-store_7800422.htm).
-- [customerService.jpg](http://www.customerexperienceinsight.com/unique-ways-reignite-customer-service-staff/).
-- [e-commerce.jpg](https://www.forbes.com/sites/kimberlywhitler/2019/11/16/the-future-of-ecommerce-and-how-the-experience-will-change/?sh=2e72c63205be).
-- [e-payment.jpg](https://thefinanser.com/2020/10/an-interview-with-gps-about-the-post-covid-payments-perspective.html/payment/).
 
 # Code Beautifier 
 - [Online HTML beautifier](https://codebeautify.org/htmlviewer/).
@@ -93,20 +94,28 @@ This website serves to provide E-commerce service which brings convenience for c
 
 # Development Progress
 
+### 18/2/2021
+- Add google map on about.html
+- Merge js files
+- Validate HTML/CSS/JS files
+
 ### 17/2/2021
-- Format restdb code to check contact number is int 
+- Modify restdb js to check for user's data type input
+- Modify Lottie Animations
+
 ### 16/2/2021
 - Add responsiveness to contact and about.html
+
 ### 15/2/2021
 - Add RestDB for contact.html
 
 ### 14/2/2021
 - Modify about.html
+
 ### 13/2/2021 :
 - Create Quiz.html
 - Add JS to create quiz questions with timer
 - Add JS for user earn to earn points upon completion of the quiz with 3 or more correct answers
-- Modify about.html
 
 ### 12/2/2021 :
 - Modify Navigation Bar
@@ -135,24 +144,9 @@ This website serves to provide E-commerce service which brings convenience for c
 - Add css animations to about.html
 - Add images(mastercard.png,paypal.png,visa.png,house.png,worldMap.png,cart.png)
 
-### 5/2/2021 : 
-- Create logo png
-- Create index.html
-- Create about.html
-- Add Footer to about.html
-- Add Banner to index.html
-- Create styles.css
-- Create script.css
-- Create Javascript to retrieve contentful api
-- Create Javascript to display product with the data retrieved from contentful api
-- Create Javascript to add item/ remove item from cart
-- Create Floating social Panel
-- Create Javascript to display social panel on click
-- Create smooth scrolling effect on click
-
 # Acknowledgement
 #### We received inspiration for this project from:
-- [Lazada](https://www.lazada.sg/#).
+- [Massdrop](https://drop.com/).
 
 #### Some of the guides that helped us build this website:
 - [Contentful](https://www.youtube.com/watch?v=bLKkG0_4Xc4&ab_channel=PragmaticReviews).
