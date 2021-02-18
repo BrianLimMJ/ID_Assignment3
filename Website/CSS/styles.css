@@ -13,6 +13,7 @@ main {
 	display: block;
 }
 
+
 /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
@@ -847,8 +848,8 @@ body {
 /* --------------- Contact Page Content(contact.html) ---------------- */
 
 .contact-image {
-	height: auto;
-	padding: 50px 0;
+	background: url("../Images/furniture.jpg") center/cover no-repeat;
+	padding: 100px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -943,17 +944,16 @@ body {
 	margin: auto;
 }
 
-.InfomationDetailsCard{
+.informationDetailsCard{
 	position: relative;
 	text-align: left;
 	line-height: 1.4;
 	margin: 25px auto;
-	
 	padding: 10px;
 	padding-left: 30px;
 }
 
-.InfomationDetailsCardDeleteBtn{
+.informationDetailsCardDeleteBtn{
 	position: absolute;
 	bottom: 1px;
 	right: 2px;
@@ -966,7 +966,7 @@ body {
 	cursor:pointer;
 }
 
-.InfomationDetailsCardDeleteBtn:hover{
+.informationDetailsCardDeleteBtn:hover{
 	background-color: rgb(241, 20, 20);
 	transition: 0.25s;
 	transform: scale(1.05);
@@ -974,41 +974,6 @@ body {
 
 #error-msg{
 	padding: 15px;
-}
-
-/* ----------- Mobile ------------------- */
-@media only screen and (max-width: 600px)
-{
-	/* Contact.html */
-	.contact-container{
-		width: 80%;
-	}
-	
-	#TOC-header{
-		width: 50%;
-	}
-	
-	.userInput{
-		width: 90%;
-	}
-
-	#contact-msg{
-		min-height: 130px;
-		min-width: 280px;
-		max-width: 350px;
-	}
-	
-	#offices-images{
-		width: 90%;
-	}
-
-	.InfomationDetailsCard{
-		width:100%
-	}
-
-	.InfomationDetailsCardDeleteBtn{
-		right: 20px;
-	}
 }
 
 /* --------------- End Of Contact Page Content(contact.html) ---------------- */
@@ -1728,10 +1693,41 @@ footer button.show {
 	#Shopification-history{
 		width: 85%;
 	}
+
+	.contact-container{
+		width: 80%;
+	}
+	
+	#TOC-header{
+		width: 50%;
+	}
+	
+	.userInput{
+		width: 90%;
+	}
+
+	#contact-msg{
+		min-height: 130px;
+		min-width: 280px;
+		max-width: 350px;
+	}
+	
+	#offices-images{
+		width: 90%;
+	}
+
+	.informationDetailsCard{
+		width:100%
+	}
+
+	.informationDetailsCardDeleteBtn{
+		right: 20px;
+	}
 }
 
 @media only screen and (max-height: 1000px)
 {
+	/* About.html */
 	#select-bed-img,#customer-service-img,#e-payment-img{
 		width: 350px
 	}
