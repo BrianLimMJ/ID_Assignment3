@@ -813,6 +813,35 @@ body {
 	padding: 20px;
 }
 
+#select-bed-img,#customer-service-img,#e-payment-img{
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: 350px;
+	width: auto;
+}
+
+.map-container {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 15px;
+	border-color: #afafafa4;
+}
+
+.map-container iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
 /* --------------- End Of About Page Content(about.html) ---------------- */
 
 /* --------------- Contact Page Content(contact.html) ---------------- */
@@ -1666,6 +1695,7 @@ footer button.show {
 }
 
 /* --------------- end of confirmation box(redeem.html) ---------------- */
+
 /* --------------- lottie loading ---------------- */
 #lottie-loading-container{
 	position: fixed;
@@ -1679,7 +1709,7 @@ footer button.show {
 
 /* --------------- responsive webpage css ----------------- */
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 644px)
 {
 	/* About.html */
 	
@@ -1702,16 +1732,10 @@ footer button.show {
 
 @media only screen and (max-height: 1000px)
 {
-	#select-bed-img{
-		height: 250px;
+	#select-bed-img,#customer-service-img,#e-payment-img{
+		width: 350px
 	}
-	#customer-service-img{
-		height: 250px;
-	}
-
-	#e-payment-img{
-		height: 251px;
-	}
+	
 }
 
 @media screen and (min-width: 768px) {
