@@ -1,7 +1,11 @@
+//Contentful
 const client = contentful.createClient({
     space: "2imdgvtwfj4o",
     accessToken: "p8CzPxkV--xG2FT22ceTx6Myeflq9wiqUzdrmmjlGqU"
 });
+
+//RestDB
+const APIKEY = '6028a9575ad3610fb5bb5fe3';
 
 console.log(client);
 
@@ -379,18 +383,16 @@ class RewardUI {
     }
 }
 
-function redeemItem(redeemPoints){
-    if(redeemPoints > totalPoints)
-    {
+function redeemItem(redeemPoints) {
+    if (redeemPoints > totalPoints) {
         Confirm.open({
             title: 'Not enough points to redeem this item.',
             message: 'You do not have enough to redeem this, do you wish to earn some points?',
             onok: () => {
                 window.location.href = "../Website/quiz.html";
             }
-          })
-    }
-    else{
+        })
+    } else {
         Confirm.open({
             title: 'Are you sure you want to redeem this?',
             message: 'You have enough points to redeem this! Are you sure you want to redeem this?',
@@ -398,9 +400,9 @@ function redeemItem(redeemPoints){
                 totalPoints -= redeemPoints;
                 userPoints.innerHTML = parseFloat(totalPoints.toFixed(0));
                 Storage.savePoint(totalPoints.toFixed(0));
-                alert("You have spent "+ redeemPoints +" points, your order has been processed.");
+                alert("You have spent " + redeemPoints + " points, your order has been processed.");
             }
-          })
+        })
     }
 }
 
@@ -573,11 +575,11 @@ try {
         quiz_box.classList.remove("activeQuiz"); //hide quiz box
         result_box.classList.add("activeResult"); //show result box
         const scoreText = result_box.querySelector(".score_text");
-		if (userScore > 3) { // if user scored more than 3
+        if (userScore > 3) { // if user scored more than 3
             //creating a new span tag and passing the user score number and total question number
             let scoreTag = '<span>and congrats! 🎉, You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have earned ' + userScore + ' reward points!</p>';
             scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
-			totalPoints += userScore;
+            totalPoints += userScore;
             userPoints.innerHTML = parseFloat(totalPoints.toFixed(0));
             Storage.savePoint(totalPoints.toFixed(0));
         } else if (userScore > 1) { // if user scored more than 1
@@ -737,17 +739,16 @@ window.onclick = function(event) {
 
 //* ---------------------- Confirmation Box JS ---------------------- *//
 const Confirm = {
-    open (options) {
+    open(options) {
         options = Object.assign({}, {
             title: '',
             message: '',
             okText: 'OK',
             cancelText: 'Cancel',
-            onok: function () {
-            },
-            oncancel: function () {}
+            onok: function() {},
+            oncancel: function() {}
         }, options);
-        
+
         const html = `
             <div class="confirm">
                 <div class="confirm__window">
@@ -795,7 +796,7 @@ const Confirm = {
         document.body.appendChild(box.content);
     },
 
-    _close (confirmEl) {
+    _close(confirmEl) {
         confirmEl.classList.add('confirm--close');
 
         confirmEl.addEventListener('animationend', () => {
@@ -806,12 +807,143 @@ const Confirm = {
 //* ---------------------- end of confirmation box JS ---------------------- *//
 
 //* ---------------------- Contact JS -------------------------------------- *//
+try {
+    window.onload =  function(){
+        $("#informationDetails").hide();
+    }
+    document.getElementById('contact-submit').addEventListener('click', function submitForm(e) {
+
+        e.preventDefault();
+
+        let contactName = document.getElementById('contact-name').value;
+        let contactEmail = document.getElementById('contact-email').value;
+        let contactNumber = document.getElementById('contact-number').value;
+        if (Number.isInteger(parseInt(contactNumber)) == false) {
+            alert("Error contact number input was not a number");
+            document.getElementById('contact-name').value = '';
+            document.getElementById('contact-email').value = '';
+            document.getElementById('contact-number').value = '';
+            document.getElementById("contact-msg").value = '';
+            return;
+        }
+        let contactMessage = document.getElementById("contact-msg").value;
+
+        let jsondata = {
+            "name": contactName,
+            'number': parseInt(contactNumber),
+            "email": contactEmail,
+            "message": contactMessage
+        };
+
+        let settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://contactform-b9e0.restdb.io/rest/contact",
+            "method": "POST",
+            "headers": {
+                "content-type": "application/json",
+                "x-apikey": APIKEY,
+                "cache-control": "no-cache"
+            },
+            "processData": false,
+            "data": JSON.stringify(jsondata)
+        }
+
+        $.ajax(settings).done(function(response) {
+            console.log(response);
+        });
+        alert('Thank you for contacting us, we will be with you shortly');
+
+        document.getElementById('contact-name').value = '';
+        document.getElementById('contact-email').value = '';
+        document.getElementById('contact-number').value = '';
+        document.getElementById("contact-msg").value = '';
+
+        $("#myForm").hide();
+        $("#informationDetails").show();
+        getContactInfo(1);
+    });
+
+    function getContactInfo(option) {
+        $("#informationDetailsContainer").empty();
+        if (option == 1) {
+            $("#informationDetailsContainer").append('<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_jFtJZy.json"  background="transparent"  speed="2"  style="width: 300px; height: 300px; margin:auto;"  loop autoplay></lottie-player>');
+        }
+        if (option == 2) {
+            $("#informationDetailsContainer").append('<lottie-player src="https://assets2.lottiefiles.com/temp/lf20_UWbx73.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin:auto;"  loop  autoplay></lottie-player>');
+
+        }
+        let settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://contactform-b9e0.restdb.io/rest/contact",
+            "method": "GET",
+            "headers": {
+                "content-type": "application/json",
+                "x-apikey": APIKEY,
+                "cache-control": "no-cache"
+            }
+        }
+
+        $.ajax(settings).done(function(response) {
+            $("#informationDetailsContainer").empty();
+            if (response.length == 0) {
+                $("#informationDetailsContainer").append('<p id = "error-msg">There are none available</p>');
+            } else {
+                for (let i = 0; i < response.length; i++) {
+                    $("#informationDetailsContainer").append('\
+                    <div class="informationDetailsCard">\
+                    <p>' + "Name: " + response[i].name + '<br>\
+                    ' + "Contact: " + response[i].number + '<br>\
+                    ' + "Email: " + response[i].email + ' <br>\
+                    ' + "Message: " + response[i].message + ' <br>\
+                    </p>\
+                    <button onclick = "DeleteContact(this.id)" class="informationDetailsCardDeleteBtn" id="' + response[i]._id + '">Delete</button>\
+                    </div>\
+                    ');
+                }
+            }
+            $("#informationDetailsContainer").append('<button onclick="returnToForm()" id = "contact-return">Go Back</button>');
+        });
+
+
+
+    }
+
+    function returnToForm() {
+        $("#myForm").show();
+        $("#informationDetails").hide();
+    }
+
+    function DeleteContact(objectId) {
+        let settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://contactform-b9e0.restdb.io/rest/contact/" + objectId,
+            "method": "DELETE",
+            "headers": {
+                "content-type": "application/json",
+                "x-apikey": APIKEY,
+                "cache-control": "no-cache"
+            }
+        }
+
+        $.ajax(settings).done(function(response) {
+            console.log(response);
+        });
+        $("#informationDetailsContainer").empty();
+        getContactInfo(2)
+    }
+
+} catch {
+    console.log("This page isn't the contact page, contact script will not be executed.");
+}
 //* ---------------------- end of Contact JS ------------------------------ *//
 
 //* ---------------------- loading JS ---------------------- *//
 
-setTimeout(function()
-{document.getElementById("lottie-loading-container").style.display = "none"},3000);
+setTimeout(function() {
+    document.getElementById("lottie-loading-container").style.display = "none"
+}, 3000);
 
 //* ---------------------- end of loading JS ---------------------- *//
-
