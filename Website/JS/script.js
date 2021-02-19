@@ -703,9 +703,6 @@ const Confirm = {
 //* ---------------------- end of confirmation box JS ---------------------- *//
 //* ---------------------- Contact JS -------------------------------------- *//
 try {
-	window.onload = function() {
-		$("#informationDetails").hide();
-	}
 	document.getElementById('contact-submit').addEventListener('click', function submitForm(e) {
 		e.preventDefault();
 		let contactName = document.getElementById('contact-name').value;

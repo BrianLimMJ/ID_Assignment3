@@ -38,7 +38,7 @@
          <div class = 'contact-container'>
             <div class="contact-form-image" style="background-image: url('Images/contact.jpg');"></div>
             <div class = 'contact-form'>
-               <h2 style="padding-bottom: 15px;">Get in touch with us!</h1>
+               <h2 style="padding-bottom: 15px;">Get in touch with us!</h2>
                <form id ='myForm'>
                   <div class="name-input">
                      <input class="userInput" id="contact-name" type="text" name="name" placeholder="Enter full name" required>                   
@@ -123,6 +123,11 @@
       <!-- contentful -->
       <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
       <!-- javascript -->
+      <script>
+         window.onload = function() {
+            $("#informationDetails").hide();
+         }
+      </script>
       <script src="JS/script.js"></script>
       <!-- Lottie -->
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

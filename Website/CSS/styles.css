@@ -288,11 +288,12 @@
      align-items: center;
      justify-content: center;
 }
- .banner {
+  .banner {
      text-align: center;
      background: rgba(255, 255, 255, 0.8);
      display: inline-block;
-     padding: 2rem;
+     padding: 4.5rem; 
+     
 }
  .banner-title {
      font-size: 3.4rem;
@@ -575,78 +576,8 @@
      width: 100%;
      position: absolute;
 }
-/* ----------- Mobile ------------------- */
-@media only screen and (max-width: 600px)
-{
-	/* About.html */
-	
-	.motto-header{
-		font-size: 18px;		
-	}
-	.content-title{
-		width: 50%;
-	}
-	.content-first-body-img
-	{
-		width: auto;
-	}
-}
-
-@media only screen and (max-height: 1000px)
-{
-	#select-bed-img{
-		height: 250px;
-	}
-	
-	#customer-service-img{
-		height: 250px;
-	}
-
-	#e-payment-img{
-		height: 251px;
-	}
-}
-
-@media only screen and (max-width: 768px)
-{
-	#select-bed-img{
-		height: 150px;
-	}
-	#customer-service-img{
-		height: 150px;
-	}
-
-	#e-payment-img{
-		height: 150px;
-	}
-	
-}
-
-@media only screen and (max-width: 1024px)
-{
-	#select-bed-img{
-		height: fit-content;
-	}
-	#customer-service-img{
-		height: fit-content;
-	}
-
-	#e-payment-img{
-		height: fit-content;
-	}
-}
-@media only screen and (max-width: 1440px)
-{
-	#select-bed-img{
-		height: 250px;
-	}
-	#customer-service-img{
-		height: 250px;
-	}
-
-	#e-payment-img{
-		height: 250px;
-	}/* --------------- Contact Page Content(contact.html) ---------------- */
+/* --------------- End Of About Page Content(about.html) ---------------- */
+/* --------------- Contact Page Content(contact.html) ---------------- */
  .contact-image {
      background: url("https://www.korestudios.com/wp-content/uploads/LUGANO-cam-08-00928_T.jpg") center/cover no-repeat;
      min-height: 800px;
@@ -770,8 +701,6 @@
 }
  #error-msg{
      padding: 15px;
-}
-	
 }
 /* --------------- End Of About Page Content(about.html) ---------------- */
 /* --------------- Contact Page Content(contact.html) ---------------- */
