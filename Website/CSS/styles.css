@@ -1302,6 +1302,10 @@
      .content-first-body-img {
          width: auto;
     }
+    #select-bed-img,#customer-service-img,#e-payment-img{
+        width: 350px;
+         height: auto;
+   }
     /* Contact.html */
      #Shopification-history{
          width: 85%;
@@ -1346,7 +1350,7 @@
     /* About.html */
      #select-bed-img,#customer-service-img,#e-payment-img{
          width: 350px;
-         height: auto;  
+          
     }
 }
  @media screen and (min-width: 768px) {
