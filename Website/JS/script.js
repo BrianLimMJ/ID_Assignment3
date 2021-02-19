@@ -710,6 +710,15 @@ try {
 		e.preventDefault();
 		let contactName = document.getElementById('contact-name').value;
 		let contactEmail = document.getElementById('contact-email').value;
+		if(ValidateEmail(contactEmail) == false)
+		{
+		  alert("You have entered an invalid email address!");
+		  document.getElementById('contact-name').value = '';
+		  document.getElementById('contact-email').value = '';
+		  document.getElementById('contact-number').value = '';
+		  document.getElementById("contact-msg").value= '';
+		  return;
+		} 
 		let contactNumber = document.getElementById('contact-number').value;
 		if(Number.isInteger(parseInt(contactNumber)) == false) {
 			alert("Error contact number input was not a number");
@@ -752,7 +761,7 @@ try {
 		getContactInfo(1);
 	});
 
-	function getContactInfo(option) {
+	function getContactInfo(option,limit = 5) {
 		$("#informationDetailsContainer").empty();
 		if(option == 1) {
 			$("#informationDetailsContainer").append('<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_jFtJZy.json"  background="transparent"  speed="2"  style="width: 300px; height: 300px; margin:auto;"  loop autoplay></lottie-player>');
@@ -776,7 +785,7 @@ try {
 			if(response.length == 0) {
 				$("#informationDetailsContainer").append('<p id = "error-msg">There are none available</p>');
 			} else {
-				for(let i = 0; i < response.length; i++) {
+				for(let i = 0; i < response.length && i<limit; i++) {
 					$("#informationDetailsContainer").append('\
                     <div class="informationDetailsCard">\
                     <p>' + "Name: " + response[i].name + '<br>\
@@ -815,6 +824,14 @@ try {
 		});
 		$("#informationDetailsContainer").empty();
 		getContactInfo(2)
+	}
+
+	function ValidateEmail(contactEmail) {
+	if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(contactEmail))
+	{
+		return (true)
+	}	
+		return (false)
 	}
 } catch {
 	console.log("This page isn't the contact page, contact script will not be executed.");
