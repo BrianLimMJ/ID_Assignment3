@@ -575,15 +575,82 @@
      width: 100%;
      position: absolute;
 }
-/* --------------- End Of About Page Content(about.html) ---------------- */
-/* --------------- Contact Page Content(contact.html) ---------------- */
+/* ----------- Mobile ------------------- */
+@media only screen and (max-width: 600px)
+{
+	/* About.html */
+	
+	.motto-header{
+		font-size: 18px;		
+	}
+	.content-title{
+		width: 50%;
+	}
+	.content-first-body-img
+	{
+		width: auto;
+	}
+}
+
+@media only screen and (max-height: 1000px)
+{
+	#select-bed-img{
+		height: 250px;
+	}
+	
+	#customer-service-img{
+		height: 250px;
+	}
+
+	#e-payment-img{
+		height: 251px;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	#select-bed-img{
+		height: 150px;
+	}
+	#customer-service-img{
+		height: 150px;
+	}
+
+	#e-payment-img{
+		height: 150px;
+	}
+	
+}
+
+@media only screen and (max-width: 1024px)
+{
+	#select-bed-img{
+		height: fit-content;
+	}
+	#customer-service-img{
+		height: fit-content;
+	}
+
+	#e-payment-img{
+		height: fit-content;
+	}
+}
+@media only screen and (max-width: 1440px)
+{
+	#select-bed-img{
+		height: 250px;
+	}
+	#customer-service-img{
+		height: 250px;
+	}
+
+	#e-payment-img{
+		height: 250px;
+	}/* --------------- Contact Page Content(contact.html) ---------------- */
  .contact-image {
-     background: url("../Images/furniture.jpg") center/cover no-repeat;
+     background: url("https://www.korestudios.com/wp-content/uploads/LUGANO-cam-08-00928_T.jpg") center/cover no-repeat;
+     min-height: 800px;
      padding: 100px;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
 }
  .contact-container {
      border-radius: 10px;
@@ -595,6 +662,7 @@
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
+     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.295);
 }
  .contact-form-image {
      height: 250px;
@@ -615,8 +683,8 @@
      color: #ffffff;
 }
  .contact-form {
-     margin: 3px;
-     margin: auto;
+     margin: 0 auto;
+     padding-top: 5%;
      height: fit-content;
 }
  .labels {
@@ -628,31 +696,44 @@
      width: 322px;
      border: 0;
      border-radius: 10px;
-     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.295);
 }
  #contact-msg{
      min-height: 130px;
      min-width: 322px;
      max-width: 602px;
 }
- #contact-submit{
-     margin:50px;
+#contact-submit{
+	margin:50px;padding: 5px 20px;
+	border-style: none;
+	background-color: rgb(238, 205, 144);
+	border-radius: .25em;
+	transition: 0.85s;
+	cursor:pointer;
+    border-style: solid;
 }
- #contact-return{
-     margin: 50px;
+#contact-submit:hover{
+	background-color: rgb(253, 253, 253);
+	transition: 0.25s;
+	transform: scale(1.05);
+    color:rgb(238, 205, 144);
 }
- .contactInfo-container{
-     background-color: #ffffff;
-     margin: auto;
-     text-align: center;
-     width: 50%;
-     height: fit-content;
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     right: 0;
-     left: 0;
+#contact-return{
+	margin: 50px;
+	padding: 5px 20px;
+	border-style: none;
+	background-color: rgb(119, 119, 119);
+	color: #ffffff;
+	border-radius: .25em;
+	transition: 0.85s;
+	cursor:pointer;
 }
+#contact-return:hover{
+	background-color: rgb(99, 99, 99);
+	transition: 0.25s;
+	transform: scale(1.05);
+}
+ 
  #TOC-header{
      padding: 15px;
      border-top-style: outset;
@@ -689,6 +770,168 @@
 }
  #error-msg{
      padding: 15px;
+}
+	
+}
+/* --------------- End Of About Page Content(about.html) ---------------- */
+/* --------------- Contact Page Content(contact.html) ---------------- */
+.contact-image {
+    background: url("https://www.korestudios.com/wp-content/uploads/LUGANO-cam-08-00928_T.jpg") center/cover no-repeat;
+    min-height: 800px;
+    padding: 100px;
+}
+.contact-container {
+    border-radius: 10px;
+    margin: auto;
+    height: fit-content;
+    width: 650px;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.295);
+}
+.contact-form-image {
+    height: 250px;
+    width: 650px;
+    border-radius: 2%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contact-header-one {
+    padding: 70px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.contact-header-two {
+    line-height: 1.6;
+    color: #ffffff;
+}
+.contact-form {
+    margin: 0 auto;
+    padding-top: 5%;
+    height: fit-content;
+}
+.labels {
+    margin: 20px;
+}
+.userInput {
+    padding: 10px;
+    margin: 15px;
+    width: 322px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.295);
+}
+#contact-msg{
+    min-height: 130px;
+    min-width: 322px;
+    max-width: 602px;
+}
+#contact-submit{
+   margin:50px;padding: 5px 20px;
+   border-style: none;
+   background-color: rgb(238, 205, 144);
+   border-radius: .25em;
+   transition: 0.85s;
+   cursor:pointer;
+   border-style: solid;
+}
+#contact-submit:hover{
+   background-color: rgb(253, 253, 253);
+   transition: 0.25s;
+   transform: scale(1.05);
+   color:rgb(238, 205, 144);
+}
+#contact-return{
+   margin: 50px;
+   padding: 5px 20px;
+   border-style: none;
+   background-color: rgb(119, 119, 119);
+   color: #ffffff;
+   border-radius: .25em;
+   transition: 0.85s;
+   cursor:pointer;
+}
+#contact-return:hover{
+   background-color: rgb(99, 99, 99);
+   transition: 0.25s;
+   transform: scale(1.05);
+}
+
+#TOC-header{
+    padding: 15px;
+    border-top-style: outset;
+    border-bottom-style: outset;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.informationDetailsCard{
+    position: relative;
+    text-align: left;
+    line-height: 1.4;
+    margin: 25px auto;
+    padding: 10px;
+    padding-left: 30px;
+}
+.informationDetailsCardDeleteBtn{
+    position: absolute;
+    bottom: 1px;
+    right: 2px;
+    padding: 5px 20px;
+    border-style: none;
+    background-color: rgb(129, 24, 24);
+    color: white;
+    border-radius: .25em;
+    transition: 0.85s;
+    cursor:pointer;
+}
+.informationDetailsCardDeleteBtn:hover{
+    background-color: rgb(241, 20, 20);
+    transition: 0.25s;
+    transform: scale(1.05);
+}
+#error-msg{
+    padding: 15px;
+}
+/* ----------- Mobile ------------------- */
+@media only screen and (max-width: 600px)
+{
+	/* Contact.html */
+	.contact-container{
+		width: 80%;
+	}
+	
+	#TOC-header{
+		width: 50%;
+	}
+	
+	.userInput{
+		width: 90%;
+	}
+
+	#contact-msg{
+		min-height: 130px;
+		min-width: 280px;
+		max-width: 350px;
+	}
+	
+	#offices-images{
+		width: 90%;
+	}
+
+	.InfomationDetailsCard{
+		width:100%
+	}
+
+	.InfomationDetailsCardDeleteBtn{
+		right: 20px;
+	}
 }
 /* --------------- End Of Contact Page Content(contact.html) ---------------- */
 /* --------------- Quiz(quiz.html) ---------------- */
