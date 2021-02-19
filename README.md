@@ -29,14 +29,8 @@ This website is mobile friendly and is compatible with any mobile device, this i
 - Use restdb for contact form
 - Lottie Animations
 
-
-
 ### Features Left To Be Implemented
 - (Idea Dropped) Survey to earn points
-
-### Problematic Features
-- (Deleting contact works however the first contact needs to be deleted twice or refresh the webpage to remove it.
-   This is a RestDB problem ) RestDB
 
 # Validator
 ### Site used for validation
@@ -78,9 +72,9 @@ This website is mobile friendly and is compatible with any mobile device, this i
 - [Online CSS beautifier](https://www.freeformatter.com/css-beautifier.html).
 
 # Development Progress
-
 ### 19/2/2021
-- Modify contact page's responsiveness
+- Modify contact page responsive media queries
+
 ### 18/2/2021
 - Add google map on about.html
 - Merge js files
